@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/assets/style.css">
+</head>
+
+<body>
+    <div class="top-header mt-3">
+
+        <div class="support-section container">
+            <div class="d-flex justify-content-between">
+                <div class="other-websites">
+                    <a class="ms-2">Tap.az</a>
+                    <a class="ms-2">Bina.az</a>
+                    <a class="ms-2">Boss.az</a>
+                </div>
+                <div class="others d-flex">
+                    <div class="call-support me-4">
+                        <span>Dəstək:</span>
+                        <a>012 537 11 37</a>
+                        <span class="ms-1 me-1">,</span>
+                        <a>012 537 11 37</a>
+                    </div>
+                    <a class="help me-4">
+                        Yardım
+                    </a>
+                    <a class="lang me-4">
+                        RU
+                    </a>
+                    <a class="favourites me-4">
+                        <i class="fa-solid fa-heart"></i>
+                        Seçilmişlər
+                    </a>
+                    <a class="account me-4">
+                        <i class="fa-solid fa-circle-user"></i>
+                        Giriş
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="header mt-3">
+            <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+                <a class="navbar-brand me-5" href="#">
+                    <img width="150"
+                         src="https://turbo.azstatic.com/assets/logo-67bbb214ce91649f92ed6036eba7e52c29f3e56614a8d1404283b4c23c5878d6.svg"
+                         alt="turbo.az">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Bütün elanlar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Avtosalonlar</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="new-anonc">
+                    <a class="new-anonc-btn btn"><i class="fa-solid fa-circle-plus"></i> Yeni elan</a>
+                </div>
+            </nav>
+        </div>
+
+    </div>
+
+    <div class="content m-3">
+
+        @RenderBody()
+    </div>
+
+    <div class="footer mt-3">
+
+        <div class="footer-support pt-3 pb-3">
+            <div class="d-flex justify-content-between">
+                <a class="add-advert ms-5 mt-2">
+                    Reklam Yerləşdirin
+                </a>
+                <div>
+                    <div class="contact d-flex justify-content-between">
+                        <a href="" class="me-4 mt-2"><i class="fa-brands fa-facebook-f fa-lg"></i></a>
+                        <a href="" class="me-4 mt-2"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                        <a href="" class="me-4 mt-2">
+                            <i class="fa-solid fa-envelope fa-lg"></i>
+                            mail@mail.ru
+                        </a>
+                        <div href="" class="call-support me-5 d-flex">
+                            <i class="fa-solid fa-phone m-3 fa-lg"></i>
+                            <div>
+                                <a>012 537 1 37</a>
+                                <br>
+                                <a>012 537 1 37</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr class="m-0">
+        <div class="agreements ps-5 pe-5 pt-3 pb-3">
+            <a class="me-4">
+                Qaydalar
+            </a>
+            <a class="me-4">
+                Qanun
+            </a>
+            <a class="me-4">
+                Istifadəçi razılaşması
+            </a>
+            <a class="me-4">
+                Məxfilik siyasəti
+            </a>
+        </div>
+        <hr class="m-0">
+        <div class="footer-end p-5 pt-3 pb-3 bg-danger text-light">
+            <div class="d-flex justify-content-between">
+                <div class="desc-part col-6">
+                    Saytın Administrasiyası reklam bannerlərinin və yerləşdirilmiş elanların məzmununa görə məsuliyyət
+                    daşımır.
+                </div>
+                <div class="about-part">
+                    <span>
+                        2006-2023 Digital Classifieds MMC. VÖEN: 1405631661
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</body>
+</html>

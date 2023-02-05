@@ -1,0 +1,52 @@
+a:hover {
+    cursor: pointer;
+}
+
+.other-websites>a,
+.others>a,
+.contact>a,
+.call-support{
+    text-decoration: none;
+    color: #8D94AD;
+}
+
+.other-websites>a:hover,
+.others>a:hover {
+    color: red;
+}
+
+.navbar,
+.content,
+.footer {
+    padding-left: 19rem;
+    padding-right: 20rem;
+}
+
+.navbar-nav>li>a {
+    color: white;
+}
+
+.new-anonc-btn {
+    background-color: #7ED321;
+    color: white;
+}
+
+.new-anonc-btn:hover {
+    background-color: #61a31b;
+    color: white;
+}
+
+.footer-support,
+.agreements{
+    background-color: #F1F3F7;
+}
+
+.add-advert{
+    text-decoration: none;
+    color: black;
+}
+
+.agreements>a {
+    color: black;
+    text-decoration: none;
+}

@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+          content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, Monsterlite admin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, Monster admin lite design, Monster admin lite dashboard bootstrap 5 dashboard template">
+    <meta name="description"
+          content="Monster Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
+    <meta name="robots" content="noindex,nofollow">
+    <title>@ViewData["Title"]</title>
+    <link rel="canonical" href="https://www.wrappixel.com/templates/monster-admin-lite/" />
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="~/admin/images/favicon.png">
+    <!-- Custom CSS -->
+    <link href="~/admin/plugins/chartist/dist/chartist.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="~/admin/css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+         data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" data-navbarbg="skin6">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <div class="navbar-header  bg-danger" data-logobg="skin6">
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <a class="navbar-brand" asp-controller="Dashboard" asp-action="Index">
+                        <!-- Logo icon -->
+                        <b class="logo-icon">
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="~/admin/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                        </b>
+                        <!--End Logo icon -->
+                    </a>
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <a class="nav-toggler waves-effect waves-light text-dark d-block d-md-none"
+                       href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse collapse  bg-danger" id="navbarSupportedContent">
+
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav me-auto mt-md-0 ">
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                    </ul>
+
+                    <!-- ============================================================== -->
+                    <!-- Right side toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav">
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                USER
+                            </a>
+                            <ul class="dropdown-menu show" aria-labelledby="navbarDropdown"></ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <!-- User Profile-->
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                               asp-controller="Dashboard" asp-action="Index" aria-expanded="false">
+                                <i class="me-3 far fa-clock fa-fw"
+                                   aria-hidden="true"></i><span class="hide-menu">Əsas</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                               href="pages-profile.html" aria-expanded="false">
+                                <i class="me-3 fa fa-user" aria-hidden="true"></i><span class="hide-menu">Hesab</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                               href="table-basic.html" aria-expanded="false">
+                                <i class="fa-solid fa-car-side me-3"></i>
+                                <span class="hide-menu">Yeni Maşınlar</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                               href="table-basic.html" aria-expanded="false">
+                                <i class="fa-solid fa-car-rear me-3"></i>
+                                <span class="hide-menu">Bütün Maşınlar</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" data-bs-toggle="collapse" href="#auth" aria-expanded="true" aria-controls="auth">
+                                <i class="fas fa-align-justify me-3"></i>
+                                <span class="hide-menu">Maşın tənzimləmələri</span>
+                            </a>
+                            <div class="collapse" id="auth" style="">
+                                <ul class="nav flex-column sub-menu ms-5">
+                                    <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="bans" asp-action="index"> Ban növləri </a></li>
+                                    <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="colors" asp-action="index"> Rənglər</a></li>
+                                    <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="countries" asp-action="index"> Ölkələr</a></li>
+                                    <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="currencies" asp-action="index"> Məzənnələr</a></li>
+                                    <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="drivetrains" asp-action="index"> Ötürücülər</a></li>
+                                    <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="enginecapacities" asp-action="index"> Mühərrik Həcmləri</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <div class="p-5 pt-4">
+                @RenderBody()
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="~/admin/plugins/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="~/admin/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/admin/js/app-style-switcher.js"></script>
+    <!--Wave Effects -->
+    <script src="~/admin/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="~/admin/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="~/admin/js/custom.js"></script>
+    <!--This page JavaScript -->
+    <!--flot chart-->
+    <script src="~/admin/plugins/flot/jquery.flot.js"></script>
+    <script src="~/admin/plugins/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+    <script src="~/admin/js/pages/dashboards/dashboard1.js"></script>
+
+</body>
+
+</html>

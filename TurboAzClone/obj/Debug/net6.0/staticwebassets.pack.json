@@ -1,0 +1,1865 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\.DS_Store",
+      "PackagePath": "staticwebassets\\admin\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\.DS_Store",
+      "PackagePath": "staticwebassets\\admin\\css\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\.DS_Store",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\css\\fa-brands.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\css\\fa-brands.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\css\\fa-brands.min.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\css\\fa-brands.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\css\\fa-regular.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\css\\fa-regular.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\css\\fa-regular.min.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\css\\fa-regular.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\css\\fa-solid.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\css\\fa-solid.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\css\\fa-solid.min.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\css\\fa-solid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\css\\fontawesome-all.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\css\\fontawesome-all.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\css\\fontawesome-all.min.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\css\\fontawesome-all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\css\\fontawesome.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\css\\fontawesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\less\\_animated.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\less\\_animated.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\less\\_bordered-pulled.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\less\\_bordered-pulled.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\less\\_core.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\less\\_core.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\less\\_fixed-width.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\less\\_fixed-width.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\less\\_icons.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\less\\_icons.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\less\\_larger.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\less\\_larger.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\less\\_list.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\less\\_list.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\less\\_mixins.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\less\\_mixins.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\less\\_rotated-flipped.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\less\\_rotated-flipped.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\less\\_screen-reader.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\less\\_screen-reader.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\less\\_stacked.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\less\\_stacked.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\less\\_variables.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\less\\_variables.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\less\\fa-brands.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\less\\fa-brands.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\less\\fa-regular.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\less\\fa-regular.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\less\\fa-solid.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\less\\fa-solid.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\less\\fontawesome.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\less\\fontawesome.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\scss\\_animated.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\scss\\_animated.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\scss\\_bordered-pulled.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\scss\\_bordered-pulled.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\scss\\_core.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\scss\\_core.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\scss\\_fixed-width.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\scss\\_fixed-width.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\scss\\_icons.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\scss\\_icons.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\scss\\_larger.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\scss\\_larger.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\scss\\_list.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\scss\\_list.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\scss\\_rotated-flipped.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\scss\\_rotated-flipped.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\scss\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\scss\\_screen-reader.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\scss\\_stacked.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\scss\\_stacked.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\scss\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\scss\\fa-brands.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\scss\\fa-brands.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\scss\\fa-regular.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\scss\\fa-regular.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\scss\\fa-solid.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\scss\\fa-solid.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\scss\\fontawesome.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\scss\\fontawesome.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\webfonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\webfonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\webfonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\webfonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\webfonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\webfonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\webfonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\webfonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\webfonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\webfonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\webfonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\webfonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\webfonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\webfonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\webfonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\webfonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\webfonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\webfonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\font-awesome\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\font-awesome\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\material-design-iconic-font\\css\\material-design-iconic-font.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\material-design-iconic-font\\css\\material-design-iconic-font.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\material-design-iconic-font\\css\\material-design-iconic-font.min.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\material-design-iconic-font\\css\\material-design-iconic-font.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\material-design-iconic-font\\css\\materialdesignicons.min.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\material-design-iconic-font\\css\\materialdesignicons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.eot",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.eot"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.svg",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.svg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.ttf",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.ttf"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.woff",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.woff"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.woff2",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.woff2"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont.eot",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont.svg",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont.ttf",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont.woff",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont.woff2",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\simple-line-icons\\css\\simple-line-icons.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\simple-line-icons\\css\\simple-line-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\simple-line-icons\\fonts\\Simple-Line-Icons.eot",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\simple-line-icons\\fonts\\Simple-Line-Icons.eot"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\simple-line-icons\\fonts\\Simple-Line-Icons.svg",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\simple-line-icons\\fonts\\Simple-Line-Icons.svg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\simple-line-icons\\fonts\\Simple-Line-Icons.ttf",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\simple-line-icons\\fonts\\Simple-Line-Icons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\simple-line-icons\\fonts\\Simple-Line-Icons.woff",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\simple-line-icons\\fonts\\Simple-Line-Icons.woff"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\simple-line-icons\\fonts\\Simple-Line-Icons.woff2",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\simple-line-icons\\fonts\\Simple-Line-Icons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\simple-line-icons\\less\\simple-line-icons.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\simple-line-icons\\less\\simple-line-icons.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\simple-line-icons\\scss\\simple-line-icons.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\simple-line-icons\\scss\\simple-line-icons.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\themify-icons\\fonts\\themify.eot",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\themify-icons\\fonts\\themify.eot"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\themify-icons\\fonts\\themify.svg",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\themify-icons\\fonts\\themify.svg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\themify-icons\\fonts\\themify.ttf",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\themify-icons\\fonts\\themify.ttf"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\themify-icons\\fonts\\themify.woff",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\themify-icons\\fonts\\themify.woff"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\themify-icons\\ie7\\ie7.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\themify-icons\\ie7\\ie7.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\themify-icons\\ie7\\ie7.js",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\themify-icons\\ie7\\ie7.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\themify-icons\\themify-icons.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\themify-icons\\themify-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\themify-icons\\themify-icons.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\themify-icons\\themify-icons.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\css\\weather-icons-core.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\css\\weather-icons-core.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\css\\weather-icons-variables.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\css\\weather-icons-variables.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\css\\weather-icons-wind.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\css\\weather-icons-wind.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\css\\weather-icons-wind.min.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\css\\weather-icons-wind.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\css\\weather-icons.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\css\\weather-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\css\\weather-icons.min.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\css\\weather-icons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\fonts\\weathericons-regular-webfont.eot",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\fonts\\weathericons-regular-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\fonts\\weathericons-regular-webfont.svg",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\fonts\\weathericons-regular-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\fonts\\weathericons-regular-webfont.ttf",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\fonts\\weathericons-regular-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\fonts\\weathericons-regular-webfont.woff",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\fonts\\weathericons-regular-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\fonts\\weathericons-regular-webfont.woff2",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\fonts\\weathericons-regular-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\css\\variables-beaufort.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\css\\variables-beaufort.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\css\\variables-day.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\css\\variables-day.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\css\\variables-direction.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\css\\variables-direction.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\css\\variables-misc.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\css\\variables-misc.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\css\\variables-moon.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\css\\variables-moon.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\css\\variables-neutral.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\css\\variables-neutral.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\css\\variables-night.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\css\\variables-night.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\css\\variables-time.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\css\\variables-time.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\css\\variables-wind-names.css",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\css\\variables-wind-names.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\icon-classes\\classes-beaufort.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\icon-classes\\classes-beaufort.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\icon-classes\\classes-day.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\icon-classes\\classes-day.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\icon-classes\\classes-direction.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\icon-classes\\classes-direction.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\icon-classes\\classes-misc.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\icon-classes\\classes-misc.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\icon-classes\\classes-moon-aliases.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\icon-classes\\classes-moon-aliases.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\icon-classes\\classes-moon.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\icon-classes\\classes-moon.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\icon-classes\\classes-neutral.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\icon-classes\\classes-neutral.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\icon-classes\\classes-night.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\icon-classes\\classes-night.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\icon-classes\\classes-time.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\icon-classes\\classes-time.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\icon-classes\\classes-wind-aliases.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\icon-classes\\classes-wind-aliases.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\icon-classes\\classes-wind-degrees.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\icon-classes\\classes-wind-degrees.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\icon-classes\\classes-wind.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\icon-classes\\classes-wind.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\icon-variables\\variables-beaufort.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\icon-variables\\variables-beaufort.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\icon-variables\\variables-day.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\icon-variables\\variables-day.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\icon-variables\\variables-direction.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\icon-variables\\variables-direction.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\icon-variables\\variables-misc.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\icon-variables\\variables-misc.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\icon-variables\\variables-moon.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\icon-variables\\variables-moon.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\icon-variables\\variables-neutral.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\icon-variables\\variables-neutral.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\icon-variables\\variables-night.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\icon-variables\\variables-night.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\icon-variables\\variables-time.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\icon-variables\\variables-time.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\icon-variables\\variables-wind-names.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\icon-variables\\variables-wind-names.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\mappings\\wi-forecast-io.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\mappings\\wi-forecast-io.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\mappings\\wi-owm.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\mappings\\wi-owm.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\mappings\\wi-wmo4680.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\mappings\\wi-wmo4680.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\mappings\\wi-yahoo.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\mappings\\wi-yahoo.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\weather-icons-classes.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\weather-icons-classes.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\weather-icons-core.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\weather-icons-core.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\weather-icons-variables.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\weather-icons-variables.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\weather-icons-wind.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\weather-icons-wind.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\weather-icons-wind.min.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\weather-icons-wind.min.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\weather-icons.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\weather-icons.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\less\\weather-icons.min.less",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\less\\weather-icons.min.less"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\icon-classes\\classes-beaufort.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\icon-classes\\classes-beaufort.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\icon-classes\\classes-day.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\icon-classes\\classes-day.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\icon-classes\\classes-direction.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\icon-classes\\classes-direction.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\icon-classes\\classes-misc.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\icon-classes\\classes-misc.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\icon-classes\\classes-moon-aliases.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\icon-classes\\classes-moon-aliases.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\icon-classes\\classes-moon.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\icon-classes\\classes-moon.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\icon-classes\\classes-neutral.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\icon-classes\\classes-neutral.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\icon-classes\\classes-night.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\icon-classes\\classes-night.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\icon-classes\\classes-time.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\icon-classes\\classes-time.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\icon-classes\\classes-wind-aliases.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\icon-classes\\classes-wind-aliases.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\icon-classes\\classes-wind-degrees.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\icon-classes\\classes-wind-degrees.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\icon-classes\\classes-wind.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\icon-classes\\classes-wind.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\icon-variables\\variables-beaufort.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\icon-variables\\variables-beaufort.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\icon-variables\\variables-day.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\icon-variables\\variables-day.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\icon-variables\\variables-direction.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\icon-variables\\variables-direction.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\icon-variables\\variables-misc.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\icon-variables\\variables-misc.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\icon-variables\\variables-moon.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\icon-variables\\variables-moon.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\icon-variables\\variables-neutral.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\icon-variables\\variables-neutral.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\icon-variables\\variables-night.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\icon-variables\\variables-night.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\icon-variables\\variables-time.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\icon-variables\\variables-time.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\icon-variables\\variables-wind-names.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\icon-variables\\variables-wind-names.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\mappings\\wi-forecast-io.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\mappings\\wi-forecast-io.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\mappings\\wi-owm.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\mappings\\wi-owm.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\mappings\\wi-wmo4680.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\mappings\\wi-wmo4680.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\mappings\\wi-yahoo.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\mappings\\wi-yahoo.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\weather-icons-classes.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\weather-icons-classes.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\weather-icons-core.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\weather-icons-core.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\weather-icons-variables.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\weather-icons-variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\weather-icons-wind.min.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\weather-icons-wind.min.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\weather-icons-wind.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\weather-icons-wind.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\weather-icons.min.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\weather-icons.min.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\icons\\weather-icons\\sass\\weather-icons.scss",
+      "PackagePath": "staticwebassets\\admin\\css\\icons\\weather-icons\\sass\\weather-icons.scss"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\style.css",
+      "PackagePath": "staticwebassets\\admin\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\css\\style.min.css",
+      "PackagePath": "staticwebassets\\admin\\css\\style.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\.DS_Store",
+      "PackagePath": "staticwebassets\\admin\\images\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\background\\error-bg.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\background\\error-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\big\\img1.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\big\\img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\big\\img2.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\big\\img2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\big\\img4.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\big\\img4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\custom-select.png",
+      "PackagePath": "staticwebassets\\admin\\images\\custom-select.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\admin\\images\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\logo-icon.png",
+      "PackagePath": "staticwebassets\\admin\\images\\logo-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\logo-text.png",
+      "PackagePath": "staticwebassets\\admin\\images\\logo-text.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\users\\1-old.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\users\\1-old.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\users\\1.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\users\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\users\\1.png",
+      "PackagePath": "staticwebassets\\admin\\images\\users\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\users\\2.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\users\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\users\\2.png",
+      "PackagePath": "staticwebassets\\admin\\images\\users\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\users\\3.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\users\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\users\\3.png",
+      "PackagePath": "staticwebassets\\admin\\images\\users\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\users\\4.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\users\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\users\\5.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\users\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\users\\6.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\users\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\users\\7.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\users\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\users\\8.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\users\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\users\\agent.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\users\\agent.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\users\\agent2.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\users\\agent2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\users\\d1.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\users\\d1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\users\\d2.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\users\\d2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\users\\d3.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\users\\d3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\users\\d4.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\users\\d4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\users\\d5.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\users\\d5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\images\\users\\profile.png",
+      "PackagePath": "staticwebassets\\admin\\images\\users\\profile.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\js\\app-style-switcher.js",
+      "PackagePath": "staticwebassets\\admin\\js\\app-style-switcher.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\js\\custom.js",
+      "PackagePath": "staticwebassets\\admin\\js\\custom.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\js\\pages\\dashboards\\dashboard1.js",
+      "PackagePath": "staticwebassets\\admin\\js\\pages\\dashboards\\dashboard1.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\js\\sidebarmenu.js",
+      "PackagePath": "staticwebassets\\admin\\js\\sidebarmenu.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\js\\waves.js",
+      "PackagePath": "staticwebassets\\admin\\js\\waves.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\.DS_Store",
+      "PackagePath": "staticwebassets\\admin\\plugins\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\.DS_Store",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\admin\\plugins\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\chartist-plugin-tooltips\\dist\\chartist-plugin-tooltip.css",
+      "PackagePath": "staticwebassets\\admin\\plugins\\chartist-plugin-tooltips\\dist\\chartist-plugin-tooltip.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\chartist-plugin-tooltips\\dist\\chartist-plugin-tooltip.min.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\chartist-plugin-tooltips\\dist\\chartist-plugin-tooltip.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\chartist\\dist\\chartist.min.css",
+      "PackagePath": "staticwebassets\\admin\\plugins\\chartist\\dist\\chartist.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\chartist\\dist\\chartist.min.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\chartist\\dist\\chartist.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot.tooltip\\.bower.json",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot.tooltip\\.bower.json"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot.tooltip\\bower.json",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot.tooltip\\bower.json"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot.tooltip\\js\\excanvas.min.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot.tooltip\\js\\excanvas.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot.tooltip\\js\\jquery.flot.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot.tooltip\\js\\jquery.flot.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot.tooltip\\js\\jquery.flot.tooltip.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot.tooltip\\js\\jquery.flot.tooltip.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot.tooltip\\js\\jquery.flot.tooltip.min.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot.tooltip\\js\\jquery.flot.tooltip.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot.tooltip\\js\\jquery.flot.tooltip.source.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot.tooltip\\js\\jquery.flot.tooltip.source.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\.bower.json",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\.bower.json"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\.gitignore",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\.gitignore"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\.travis.yml",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\.travis.yml"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\API.md",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\API.md"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\CONTRIBUTING.md",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\CONTRIBUTING.md"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\FAQ.md",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\FAQ.md"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\Makefile",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\NEWS.md",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\NEWS.md"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\PLUGINS.md",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\PLUGINS.md"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\README.md",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\component.json",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\component.json"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\ajax\\data-eu-gdp-growth-1.json",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\ajax\\data-eu-gdp-growth-1.json"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\ajax\\data-eu-gdp-growth-2.json",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\ajax\\data-eu-gdp-growth-2.json"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\ajax\\data-eu-gdp-growth-3.json",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\ajax\\data-eu-gdp-growth-3.json"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\ajax\\data-eu-gdp-growth-4.json",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\ajax\\data-eu-gdp-growth-4.json"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\ajax\\data-eu-gdp-growth-5.json",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\ajax\\data-eu-gdp-growth-5.json"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\ajax\\data-eu-gdp-growth.json",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\ajax\\data-eu-gdp-growth.json"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\ajax\\data-japan-gdp-growth.json",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\ajax\\data-japan-gdp-growth.json"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\ajax\\data-usa-gdp-growth.json",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\ajax\\data-usa-gdp-growth.json"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\ajax\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\ajax\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\annotating\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\annotating\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\axes-interacting\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\axes-interacting\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\axes-multiple\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\axes-multiple\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\axes-time-zones\\date.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\axes-time-zones\\date.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\axes-time-zones\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\axes-time-zones\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz\\africa",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz\\antarctica",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz\\asia",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz\\australasia",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz\\backward",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz\\etcetera",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz\\europe",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz\\factory",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz\\iso3166.tab",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz\\iso3166.tab"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz\\leapseconds",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz\\northamerica",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz\\pacificnew",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz\\solar87",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz\\solar88",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz\\solar89",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz\\southamerica",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz\\systemv",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz\\yearistype.sh",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz\\yearistype.sh"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz\\zone.tab",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\axes-time-zones\\tz\\zone.tab"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\axes-time\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\axes-time\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\background.png",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\background.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\basic-options\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\basic-options\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\basic-usage\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\basic-usage\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\canvas\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\canvas\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\categories\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\categories\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\examples.css",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\examples.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\image\\hs-2004-27-a-large-web.jpg",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\image\\hs-2004-27-a-large-web.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\image\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\image\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\interacting\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\interacting\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\navigate\\arrow-down.gif",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\navigate\\arrow-down.gif"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\navigate\\arrow-left.gif",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\navigate\\arrow-left.gif"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\navigate\\arrow-right.gif",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\navigate\\arrow-right.gif"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\navigate\\arrow-up.gif",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\navigate\\arrow-up.gif"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\navigate\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\navigate\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\percentiles\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\percentiles\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\realtime\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\realtime\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\resize\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\resize\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\selection\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\selection\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\series-errorbars\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\series-errorbars\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\series-pie\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\series-pie\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\series-toggle\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\series-toggle\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\series-types\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\series-types\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\shared\\jquery-ui\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\shared\\jquery-ui\\jquery-ui.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\stacking\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\stacking\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\symbols\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\symbols\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\threshold\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\threshold\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\tracking\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\tracking\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\visitors\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\visitors\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\examples\\zooming\\index.html",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\examples\\zooming\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\excanvas.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\excanvas.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\excanvas.min.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\excanvas.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\flot.jquery.json",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\flot.jquery.json"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\jquery.colorhelpers.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\jquery.colorhelpers.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\jquery.flot.canvas.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\jquery.flot.canvas.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\jquery.flot.categories.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\jquery.flot.categories.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\jquery.flot.crosshair.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\jquery.flot.crosshair.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\jquery.flot.errorbars.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\jquery.flot.errorbars.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\jquery.flot.fillbetween.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\jquery.flot.fillbetween.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\jquery.flot.image.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\jquery.flot.image.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\jquery.flot.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\jquery.flot.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\jquery.flot.navigate.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\jquery.flot.navigate.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\jquery.flot.pie.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\jquery.flot.pie.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\jquery.flot.resize.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\jquery.flot.resize.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\jquery.flot.selection.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\jquery.flot.selection.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\jquery.flot.stack.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\jquery.flot.stack.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\jquery.flot.symbol.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\jquery.flot.symbol.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\jquery.flot.threshold.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\jquery.flot.threshold.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\jquery.flot.time.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\jquery.flot.time.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\jquery.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\flot\\package.json",
+      "PackagePath": "staticwebassets\\admin\\plugins\\flot\\package.json"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\gmaps\\gmaps.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\gmaps\\gmaps.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\gmaps\\gmaps.min.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\gmaps\\gmaps.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\gmaps\\gmaps.min.js.map",
+      "PackagePath": "staticwebassets\\admin\\plugins\\gmaps\\gmaps.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\gmaps\\jquery.gmaps.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\gmaps\\jquery.gmaps.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\gmaps\\lib\\gmaps.controls.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\gmaps\\lib\\gmaps.controls.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\gmaps\\lib\\gmaps.core.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\gmaps\\lib\\gmaps.core.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\gmaps\\lib\\gmaps.events.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\gmaps\\lib\\gmaps.events.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\gmaps\\lib\\gmaps.geofences.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\gmaps\\lib\\gmaps.geofences.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\gmaps\\lib\\gmaps.geometry.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\gmaps\\lib\\gmaps.geometry.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\gmaps\\lib\\gmaps.layers.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\gmaps\\lib\\gmaps.layers.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\gmaps\\lib\\gmaps.map_types.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\gmaps\\lib\\gmaps.map_types.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\gmaps\\lib\\gmaps.markers.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\gmaps\\lib\\gmaps.markers.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\gmaps\\lib\\gmaps.native_extensions.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\gmaps\\lib\\gmaps.native_extensions.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\gmaps\\lib\\gmaps.overlays.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\gmaps\\lib\\gmaps.overlays.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\gmaps\\lib\\gmaps.routes.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\gmaps\\lib\\gmaps.routes.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\gmaps\\lib\\gmaps.static.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\gmaps\\lib\\gmaps.static.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\gmaps\\lib\\gmaps.streetview.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\gmaps\\lib\\gmaps.streetview.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\gmaps\\lib\\gmaps.styles.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\gmaps\\lib\\gmaps.styles.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\gmaps\\lib\\gmaps.utils.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\gmaps\\lib\\gmaps.utils.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\jquery\\dist\\core.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\jquery\\dist\\core.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\jquery\\dist\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\jquery\\dist\\jquery.slim.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\perfect-scrollbar\\dist\\css\\perfect-scrollbar.min.css",
+      "PackagePath": "staticwebassets\\admin\\plugins\\perfect-scrollbar\\dist\\css\\perfect-scrollbar.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\perfect-scrollbar\\dist\\js\\perfect-scrollbar.jquery.min.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\perfect-scrollbar\\dist\\js\\perfect-scrollbar.jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\perfect-scrollbar\\dist\\js\\perfect-scrollbar.min.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\perfect-scrollbar\\dist\\js\\perfect-scrollbar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\perfect-scrollbar\\dist\\perfect-scrollbar.common.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\perfect-scrollbar\\dist\\perfect-scrollbar.common.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\perfect-scrollbar\\dist\\perfect-scrollbar.esm.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\perfect-scrollbar\\dist\\perfect-scrollbar.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\perfect-scrollbar\\dist\\perfect-scrollbar.jquery.min.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\perfect-scrollbar\\dist\\perfect-scrollbar.jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\perfect-scrollbar\\dist\\perfect-scrollbar.min.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\perfect-scrollbar\\dist\\perfect-scrollbar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\popper.js\\dist\\esm\\popper-utils.min.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\popper.js\\dist\\esm\\popper-utils.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\popper.js\\dist\\esm\\popper.min.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\popper.js\\dist\\esm\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\popper.js\\dist\\popper-utils.min.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\popper.js\\dist\\popper-utils.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\popper.js\\dist\\popper.min.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\popper.js\\dist\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\popper.js\\dist\\umd\\popper-utils.min.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\popper.js\\dist\\umd\\popper-utils.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\plugins\\popper.js\\dist\\umd\\popper.min.js",
+      "PackagePath": "staticwebassets\\admin\\plugins\\popper.js\\dist\\umd\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\ban-images\\707c1b25-b272-49c5-a94d-3c34d890a014-85562d79ff5cd98affde0e96f9c5b4b4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\ban-images\\707c1b25-b272-49c5-a94d-3c34d890a014-85562d79ff5cd98affde0e96f9c5b4b4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\color-images\\1d6f8137-64e5-4819-aab7-51897aa4d9a1-In4x5M.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\color-images\\1d6f8137-64e5-4819-aab7-51897aa4d9a1-In4x5M.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\color-images\\3390da5c-cf60-4f36-8bdc-0fd54fd69432-85562d79ff5cd98affde0e96f9c5b4b4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\color-images\\3390da5c-cf60-4f36-8bdc-0fd54fd69432-85562d79ff5cd98affde0e96f9c5b4b4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\country-images\\35dd23d9-dac7-4b94-9853-7b642f305d17-85562d79ff5cd98affde0e96f9c5b4b4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\country-images\\35dd23d9-dac7-4b94-9853-7b642f305d17-85562d79ff5cd98affde0e96f9c5b4b4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\country-images\\da0b80fa-b2db-4d0a-9442-cf840b508cad-In4x5M.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\country-images\\da0b80fa-b2db-4d0a-9442-cf840b508cad-In4x5M.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\style.css",
+      "PackagePath": "staticwebassets\\assets\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.TurboAzClone.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.TurboAzClone.props",
+      "PackagePath": "build\\TurboAzClone.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.TurboAzClone.props",
+      "PackagePath": "buildMultiTargeting\\TurboAzClone.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.TurboAzClone.props",
+      "PackagePath": "buildTransitive\\TurboAzClone.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
