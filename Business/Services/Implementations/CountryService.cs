@@ -4,7 +4,6 @@ using Business.Utilities.Exceptions;
 using DAL.Repositories.Interfaces;
 using Entities.Concrets;
 using Entities.DTOs.CountryDtos;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 
 namespace Business.Services.Implementations
@@ -14,14 +13,11 @@ namespace Business.Services.Implementations
         private readonly ICountryRepository _repository;
         private readonly IMapper _mapper;
         private readonly IImageService _imageService;
-        private readonly IWebHostEnvironment _env;
-
-        public CountryService(ICountryRepository repository, IMapper mapper, IImageService imageService, IWebHostEnvironment env)
+        public CountryService(ICountryRepository repository, IMapper mapper, IImageService imageService)
         {
             _repository = repository;
             _mapper = mapper;
             _imageService = imageService;
-            _env = env;
         }
 
         public async Task<List<CountryGetDto>> GetAllAsync()

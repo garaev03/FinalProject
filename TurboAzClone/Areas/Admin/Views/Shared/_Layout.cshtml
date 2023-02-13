@@ -19,6 +19,7 @@
     <link href="~/admin/plugins/chartist/dist/chartist.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="~/admin/css/style.min.css" rel="stylesheet">
+    <link href="~/admin/css/image-modal.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -129,16 +130,23 @@
                         </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                               href="table-basic.html" aria-expanded="false">
+                               asp-controller="vehicles" asp-action="news" aria-expanded="false">
                                 <i class="fa-solid fa-car-side me-3"></i>
                                 <span class="hide-menu">Yeni Maşınlar</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                               href="table-basic.html" aria-expanded="false">
+                               asp-controller="vehicles" asp-action="all" aria-expanded="false">
                                 <i class="fa-solid fa-car-rear me-3"></i>
                                 <span class="hide-menu">Bütün Maşınlar</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                               asp-controller="vehicles" asp-action="cancels" aria-expanded="false">
+                                <i class="fa-solid fa-car-rear me-3"></i>
+                                <span class="hide-menu">Imtina ol. Maşınlar</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
@@ -148,12 +156,24 @@
                             </a>
                             <div class="collapse" id="auth" style="">
                                 <ul class="nav flex-column sub-menu ms-5">
+                                    <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="makes" asp-action="index"> Markalar</a></li>
+                                    <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="models" asp-action="index"> Modellər</a></li>
+                                    <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="countries" asp-action="index"> Ölkələr</a></li>
+                                    <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="cities" asp-action="index"> Şəhərlər</a></li>
                                     <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="bans" asp-action="index"> Ban növləri </a></li>
                                     <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="colors" asp-action="index"> Rənglər</a></li>
-                                    <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="countries" asp-action="index"> Ölkələr</a></li>
                                     <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="currencies" asp-action="index"> Məzənnələr</a></li>
                                     <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="drivetrains" asp-action="index"> Ötürücülər</a></li>
                                     <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="enginecapacities" asp-action="index"> Mühərrik Həcmləri</a></li>
+                                    <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="mileagetypes" asp-action="index"> Kilometraj ölçüləri</a></li>
+                                    <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="fuels" asp-action="index"> Yanacaq növləri</a></li>
+                                    <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="gearboxes" asp-action="index"> Sürət qutuları</a></li>
+                                    <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="vehiclereports" asp-action="index"> Nəqliyyat vəziyyətləri</a></li>
+                                    <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="seats" asp-action="index"> Oturacaq sayları</a></li>
+                                    <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="ownercounts" asp-action="index"> Sahib sayları</a></li>
+                                    <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="vehicleconditions" asp-action="index"> Nəqliyyat mövcudluqları</a></li>
+                                    <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="vehiclesupplies" asp-action="index"> Nəqliyyat təchizatları</a></li>
+                                    <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="years" asp-action="index"> Nəqliyyat illəri</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -200,6 +220,8 @@
     <script src="~/admin/plugins/flot/jquery.flot.js"></script>
     <script src="~/admin/plugins/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
     <script src="~/admin/js/pages/dashboards/dashboard1.js"></script>
+    <script src="~/admin/js/image-slider.js"></script>
+    <script src="~/admin/js/drop-car.js"></script>
 
 </body>
 

@@ -1,0 +1,418 @@
+﻿@model VehiclePostDto
+@{
+    ViewData["Title"] = "Yeni Avtomobil";
+}
+
+<div>
+    <h3>Elan yerləşdir</h3>
+    <div>
+        <i class="fa-solid fa-exclamation me-2"></i>Elanınızı saytın ön sıralarında görmək üçün "İrəli çək" xidmətindən istifadə edin.
+    </div>
+    <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+    <form method="post" enctype="multipart/form-data">
+        <div class="d-flex">
+
+            <div class="first-group me-5">
+
+                <div class="form-group d-flex justify-content-between mt-4">
+                    <label>Marka</label>
+                    <div>
+                        <select class="form-control form-control-sm" style="width: 20rem" id="selected-make"
+                                onmousedown="if(this.options.length>8){this.size=8;}" onchange="this.size=0;" onblur="this.size=0;">
+                            <option>Seçin</option>
+
+                            @foreach (var item in ViewBag.Makes)
+                            {
+                                <option value="@item.Id">@item.Name</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group d-flex justify-content-between mt-4">
+                    <label>Model</label>
+                    <div>
+                        <select class="form-control form-control-sm" style="width: 20rem" id="models" asp-for="ModelId"
+                                onmousedown="if(this.options.length>10){this.size=10;}" onchange="this.size=0;" onblur="this.size=0;">
+                            <option value="0">Seçin</option>
+                        </select>
+                        <span asp-validation-for="ModelId" class="text text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group d-flex justify-content-between mt-4">
+                    <label>Ban növü</label>
+                    <div>
+                        <select class="form-control form-control-sm" style="width: 20rem" asp-for="BanId"
+                                onmousedown="if(this.options.length>10){this.size=10;}" onchange="this.size=0;" onblur="this.size=0;">
+                            <option value="0">Seçin</option>
+                            @foreach (var item in ViewBag.Bans)
+                            {
+                                <option value="@item.Id">@item.Name</option>
+                            }
+                        </select>
+                        <span asp-validation-for="BanId" class="text text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group d-flex justify-content-between mt-4">
+                    <label>Yürüş</label>
+                    <div style="width: 20rem" class="d-flex">
+                        <div>
+                            <input type="number" class="form-control form-control-sm me-3" style="width: 10rem" min="0" asp-for="Milage" />
+                            <span asp-validation-for="Milage" class="text text-danger"></span><br />
+                            <span asp-validation-for="MileageTypeId" class="text text-danger"></span>
+                        </div>
+                        <div>
+                            @foreach (var item in ViewBag.MileageTypes)
+                            {
+                                <div class="form-check me-2">
+                                    @if (ViewBag.MileageTypes.IndexOf(item) == 0)
+                                    {
+                                        <input class="form-check-input" type="radio" asp-for="MileageTypeId" name="MileageTypeId" value="@item.Id" checked />
+                                    }
+                                    else
+                                    {
+                                        <input class="form-check-input" type="radio" asp-for="MileageTypeId" name="MileageTypeId" value="@item.Id" />
+                                    }
+                                    <label class="form-check-label" asp-for="MileageTypeId"> @item.Name </label>
+                                </div>
+                            }
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form-group d-flex justify-content-between mt-4">
+                    <label>Rəng</label>
+                    <div>
+                        <select class="form-control form-control-sm" style="width: 20rem" asp-for="ColorId"
+                                onmousedown="if(this.options.length>10){this.size=10;}" onchange="this.size=0;" onblur="this.size=0;">
+                            <option value="0">Seçin</option>
+                            @foreach (var item in ViewBag.Colors)
+                            {
+                                <option value="@item.Id">@item.Name</option>
+                            }
+                        </select>
+                        <span asp-validation-for="ColorId" class="text text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group d-flex justify-content-between mt-4">
+                    <label>Qiymət</label>
+
+                    <div style="width: 20rem" class="d-flex">
+                        <div>
+                            <input type="number" class="form-control form-control-sm me-3" style="width: 10rem" min="500" asp-for="Price" />
+                            <span asp-validation-for="Price" class="text text-danger"></span><br />
+                            <span asp-validation-for="CurrencyId" class="text text-danger"></span>
+                        </div>
+                        @foreach (var item in ViewBag.Currencies)
+                        {
+                            <div class="form-check me-2">
+                                @if (ViewBag.Currencies.IndexOf(item) == 0)
+                                {
+                                    <input class="form-check-input" type="radio" asp-for="CurrencyId" name="CurrencyId" value="@item.Id" checked />
+                                }
+                                else
+                                {
+                                    <input class="form-check-input" type="radio" asp-for="CurrencyId" name="CurrencyId" value="@item.Id" />
+                                }
+                                <label class="form-check-label" asp-for="CurrencyId"> @item.Name </label>
+                            </div>
+                        }
+                    </div>
+                </div>
+
+
+                <div class="form-group d-flex justify-content-between mt-4">
+                    <label class="me-4">Neçənci sahibisiniz?</label>
+                    <div>
+                        <select class="form-control form-control-sm" style="width: 20rem" asp-for="OwnerId"
+                                onmousedown="if(this.options.length>10){this.size=10;}" onchange="this.size=0;" onblur="this.size=0;">
+                            <option value="0">Seçin</option>
+                            @foreach (var item in ViewBag.Owners)
+                            {
+                                <option value="@item.Id">@item.Name</option>
+                            }
+                        </select>
+                        <span asp-validation-for="OwnerId" class="text text-danger"></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="second-group ms-5">
+
+                <div class="form-group d-flex justify-content-between mt-4">
+                    <label class="me-4">Yanacaq növü</label>
+                    <div>
+                        <select class="form-control form-control-sm" style="width: 20rem" asp-for="FuelId"
+                                onmousedown="if(this.options.length>10){this.size=10;}" onchange="this.size=0;" onblur="this.size=0;">
+                            <option value="0">Seçin</option>
+                            @foreach (var item in ViewBag.Fuels)
+                            {
+                                <option value="@item.Id">@item.Name</option>
+                            }
+                        </select>
+                        <span asp-validation-for="FuelId" class="text text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group d-flex justify-content-between mt-4">
+                    <label class="me-4">Ötürücü</label>
+                    <div>
+                        <select class="form-control form-control-sm" style="width: 20rem" asp-for="DriveTrainId"
+                                onmousedown="if(this.options.length>10){this.size=10;}" onchange="this.size=0;" onblur="this.size=0;">
+                            <option value="0">Seçin</option>
+                            @foreach (var item in ViewBag.DriveTrains)
+                            {
+                                <option value="@item.Id">@item.Name</option>
+                            }
+                        </select>
+                        <span asp-validation-for="DriveTrainId" class="text text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group d-flex justify-content-between mt-4">
+                    <label class="me-4">Sürətlər qutusu</label>
+                    <div>
+                        <select class="form-control form-control-sm" style="width: 20rem" asp-for="GearBoxId"
+                                onmousedown="if(this.options.length>10){this.size=10;}" onchange="this.size=0;" onblur="this.size=0;">
+                            <option value="0">Seçin</option>
+                            @foreach (var item in ViewBag.GearBoxes)
+                            {
+                                <option value="@item.Id">@item.Name</option>
+                            }
+                        </select>
+                        <span asp-validation-for="GearBoxId" class="text text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group d-flex justify-content-between mt-4">
+                    <label class="me-4">İl</label>
+                    <div>
+                        <select class="form-control form-control-sm" style="width: 20rem" asp-for="YearId"
+                                onmousedown="if(this.options.length>10){this.size=10;}" onchange="this.size=0;" onblur="this.size=0;">
+                            <option value="0">Seçin</option>
+                            @foreach (var item in ViewBag.Years)
+                            {
+                                <option value="@item.Id">@item.Value</option>
+                            }
+                        </select>
+                        <span asp-validation-for="YearId" class="text text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group d-flex justify-content-between mt-4">
+                    <label class="me-4">Mühərrik həcmi, sm<sup>3</sup></label>
+                    <div>
+                        <select class="form-control form-control-sm" style="width: 20rem" asp-for="EngineCapacityId"
+                                onmousedown="if(this.options.length>10){this.size=10;}" onchange="this.size=0;" onblur="this.size=0;">
+                            <option value="0">Seçin</option>
+                            @foreach (var item in ViewBag.EngineCapacities)
+                            {
+                                <option value="@item.Id">@item.Value</option>
+                            }
+                        </select>
+                        <span asp-validation-for="EngineCapacityId" class="text text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group d-flex justify-content-between  mt-4">
+                    <label class="me-4">Mühərrik gücü</label>
+                    <div>
+                        <input type="number" class="form-control form-control-sm" style="width: 20rem" min="1" asp-for="EnginePower" />
+                        <span asp-validation-for="EnginePower" class="text text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group d-flex justify-content-between mt-4">
+                    <label class="me-4">Ölkəsi</label>
+                    <div>
+                        <select class="form-control form-control-sm" style="width: 20rem" asp-for="CountryId"
+                                onmousedown="if(this.options.length>10){this.size=10;}" onchange="this.size=0;" onblur="this.size=0;">
+                            <option value="0">Seçin</option>
+                            @foreach (var item in ViewBag.Countries)
+                            {
+                                <option value="@item.Id">
+                                    <img width="100" src="~/assets/images/country-images/@item.Image" />
+                                    @item.Name
+                                </option>
+                            }
+                        </select>
+                        <span asp-validation-for="CountryId" class="text text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="third-group">
+            <div class="form-group d-flex justify-content-start mt-4" style="width: 70rem;">
+                <label class="me-5">Vəziyyət</label>
+
+                <div class="checkboxes ms-5 ps-2 d-flex justify-content-between">
+                    <div class="form-check">
+                        @foreach (var item in ViewBag.Reports)
+                        {
+                            <input class="form-check-input" type="checkbox" name="ReportIds" value="@item.Id">
+                            <label class="form-check-label" asp-for="ReportIds">
+                                @item.Name
+                                <p style="width: 25rem;" class="text-secondary">
+                                    @item.Description
+                                </p>
+                            </label>
+                        }
+                    </div>
+                </div>
+            </div>
+            <span asp-validation-for="ReportIds" class="text text-danger"></span>
+        </div>
+
+        <div class="forth-group">
+            <div class="form-group d-flex justify-content-start mt-4" style="width: 70rem;">
+                <label class="me-5">Yerlərin sayı</label>
+                <div>
+                    <div class="checkboxes ms-4 ps-2 d-flex justify-content-between">
+                        @foreach (var item in ViewBag.Seats)
+                        {
+                            <div class="form-check me-2">
+                                @if (ViewBag.Seats.IndexOf(item) == 0)
+                                {
+                                    <input class="form-check-input" type="radio" asp-for="SeatId" name="SeatId" value="@item.Id" checked />
+                                }
+                                else
+                                {
+                                    <input class="form-check-input" type="radio" asp-for="SeatId" name="SeatId" value="@item.Id" />
+                                }
+                                <label class="form-check-label" asp-for="SeatId"> @item.Value </label>
+                            </div>
+                        }
+                    </div>
+                    <span asp-validation-for="SeatId" class="text text-danger"></span>
+                </div>
+            </div>
+
+            <div class="fifth-group ms-5 ps-3">
+                <div class="checkboxes ms-5 ps-5 mt-3">
+                    @foreach (var item in ViewBag.Conditions)
+                    {
+                        if (item.Id == 3)
+                        {
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="@item.Id" name="VehicleConditionId" hidden checked>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="@item.Id" name="VehicleConditionId">
+                                <label class="form-check-label">
+                                    @item.Name
+                                </label>
+                            </div>
+                        }
+                    }
+                </div>
+                <span asp-validation-for="VehicleConditionId" class="text text-danger"></span>
+            </div>
+
+            <div class="sixth-group d-flex mt-4">
+                <label class="me-5 pe-2">VIN kod</label>
+                <div class="d-flex">
+                    <input type="text" class="form-control form-control-sm ms-5 " asp-for="VIN" style="width: 20rem;" />
+
+                    <a class="ms-3" style="text-decoration: none;">VIN Kodu hardan tapmaq olar?</a>
+                </div>
+            </div>
+            <span asp-validation-for="VIN" class="text text-danger"></span>
+
+            <div class="seventh-group d-flex mt-4" style="width: 66rem">
+                <label style="width: 10rem;" asp-for="Description">Əlavə məlumat</label>
+                <div style="width: 100%" class="ms-3">
+                    <textarea style="width: 100%; height: 10rem;" asp-for="Description"></textarea>
+                    <span asp-validation-for="Description" class="text text-danger"></span>
+                </div>
+            </div>
+
+            <div class="eight-group mt-4" style="width: 66rem">
+                <label style="width: 10rem;">Avtomobil təchizatı</label>
+                <div class="checkboxes ms-4 ps-2 mt-3 d-flex justify-content-between row">
+                    @foreach (var item in ViewBag.Supplies)
+                    {
+                        <div class="form-check col-3">
+                            <input class="form-check-input" type="checkbox" value="@item.Id" name="SupplyIds">
+                            <label class="form-check-label">
+                                @item.Name
+                            </label>
+                        </div>
+                    }
+                </div>
+                <span asp-validation-for="SupplyIds" class="text text-danger"></span>
+            </div>
+
+            <div class="seventh-group mt-4" style="width: 66rem">
+                <label class="form-label" style="font-size: 1.5rem;font-weight: bold;">Şəkillər</label>
+                <div>
+                    <input type="file" class="form-control" asp-for="formFiles" multiple />
+
+                    <span asp-validation-for="formFiles" class="text text-danger"></span>
+                </div>
+            </div>
+
+            <div class="ninth-group mt-4" style="width: 66rem">
+                <label class="" style="font-size: 1.5rem;font-weight: bold;">Əlaqə</label>
+                <p>Elan dərc olunduqdan sonra əlaqə məlumatları ilə bağlı heç bir dəyişiklik həyata keçirilmir.</p>
+
+                <div class="d-flex justify-content-between" style="width: 30rem;">
+                    <label class="">Adınız</label>
+                    <div>
+                        <input type="text" class="form-control form-control-sm" style="width: 20rem;" asp-for="OwnerName">
+                        <span asp-validation-for="OwnerName" class="text text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between mt-3" style="width: 30rem;">
+                    <label class="">Nömrəniz</label>
+                    <div>
+                        <input type="number" class="form-control form-control-sm" style="width: 20rem;" asp-for="PhoneNumber">
+                        <span asp-validation-for="PhoneNumber" class="text text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between mt-3" style="width: 30rem;">
+                    <label class="">Şəhər</label>
+                    <div>
+                        <select class="form-control form-control-sm" style="width: 20rem;" asp-for="CityId"
+                                onmousedown="if(this.options.length>8){this.size=8;}" onchange="this.size=0;" onblur="this.size=0;">
+                            <option value="0">Seçin</option>
+                            @foreach (var item in ViewBag.Cities)
+                            {
+                                <option value="@item.Id">@item.Code- @item.Name</option>
+                            }
+                        </select>
+                        <span asp-validation-for="CityId" class="text text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between mt-3" style="width: 30rem;">
+                    <label class="">Email</label>
+                    <div>
+                        <input type="text" class="form-control form-control-sm" style="width: 20rem;" asp-for="Email">
+                        <small class="text-secondary" for="test">saytda göstərilmir</small><br />
+                        <span asp-validation-for="Email" class="text text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center mt-4 mb-4" style="width: 66rem;">
+
+                <button type="submit" class="btn btn-danger btn-lg pe-5 ps-5 ">Elanı yerləşdir</button>
+            </div>
+
+            <p>Elan yerləşdirərək, siz Turbo.az-ın <a>İstifadəçi razılaşması</a> və <a>Qaydaları</a> ilə razı olduğunuzu təsdiq edirsiniz</p>
+        </div>
+
+    </form>
+</div>

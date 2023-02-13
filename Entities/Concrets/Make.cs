@@ -12,5 +12,10 @@ namespace Entities.Concrets
         public int Id { get; set; }
         public string Name { get; set; }
         public string Image { get; set; }
+        public List<Model> Models { get; set; }
+        public Make()
+        {
+            Models= new List<Model>();
+        }
     }
 }

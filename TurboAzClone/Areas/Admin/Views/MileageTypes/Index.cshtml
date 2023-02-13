@@ -1,0 +1,52 @@
+﻿@model List<MileageTypeGetDto>
+
+@{
+    ViewData["Title"] = "Kilometraj Ölçüləri";
+}
+
+<h1>Kilometraj Ölçüləri</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success text-light">Yeni Ölçü əlavə et</a>
+</p>
+<table class="table" style="vertical-align:middle">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th class="text-center">
+                Adı
+            </th>
+            <th>
+                Tənzimlənmələr
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td width="100">
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td class="text-center">
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    <div>
+                        <a asp-action="update" asp-route-id="@item.Id">
+                            <i class="fa-regular fa-pen-to-square btn btn-warning me-3"></i>
+                        </a>
+                        <a asp-action="delete" asp-route-id="@item.Id">
+                            <i class="fa-solid fa-trash-can btn btn-danger text-light"></i>
+                        </a>
+                    </div>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

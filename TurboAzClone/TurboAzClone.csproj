@@ -30,6 +30,8 @@
     <Folder Include="wwwroot\assets\images\color-images\" />
     <Folder Include="wwwroot\assets\images\ban-images\" />
     <Folder Include="wwwroot\assets\images\country-images\" />
+    <Folder Include="wwwroot\assets\images\make-images\" />
+    <Folder Include="wwwroot\assets\images\vehicle-images\" />
   </ItemGroup>
 
 </Project>

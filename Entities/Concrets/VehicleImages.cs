@@ -11,6 +11,7 @@ namespace Entities.Concrets
     {
         public int Id { get; set; }
         public string Path { get; set; }
+        public bool isMain { get; set; }
         public int VehicleId { get; set; }
         public Vehicle Vehicle { get; set; }
     }

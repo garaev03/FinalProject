@@ -12,9 +12,9 @@ using System.Threading.Tasks;
 
 namespace Core.Repositories.Implementations
 {
-    public class TEntityRepository<T,Context> : ITEntityRepository<T>
+    public class TEntityRepository<T, Context> : ITEntityRepository<T>
         where T : Entity
-        where Context:IdentityDbContext<AppUser>
+        where Context : IdentityDbContext<AppUser>
     {
         private readonly Context _db;
 
@@ -25,8 +25,8 @@ namespace Core.Repositories.Implementations
 
         public async Task<List<T>> GetAllAsync(Expression<Func<T, bool>> exp, params string[]? includes)
         {
-            IQueryable<T> query=_db.Set<T>().Where(exp);
-            if(includes is not null)
+            IQueryable<T> query = _db.Set<T>().Where(exp);
+            if (includes is not null)
             {
                 foreach (var item in includes)
                 {
@@ -36,14 +36,18 @@ namespace Core.Repositories.Implementations
             return await query.ToListAsync();
         }
 
-        public async Task<T?> GetByIdAsync(int id)
+        public async Task<T?> GetByIdAsync(int id, params string[]? includes)
         {
-            T? model=await _db.Set<T>().FindAsync(id);
+            var db = _db.Set<T>();
+            if (includes is not null)
+                foreach (var item in includes) { db.Include(item); }
+
+            T? model = await db.FirstOrDefaultAsync(x => x.Id == id);
             if (model is not null && model.isDeleted)
                 model = null;
             return model;
         }
-        
+
 
         public async Task CreateAsync(T model)
         {

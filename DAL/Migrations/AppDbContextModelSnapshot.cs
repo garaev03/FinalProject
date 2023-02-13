@@ -112,7 +112,30 @@ namespace DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Bans", (string)null);
+                    b.ToTable("Bans");
+                });
+
+            modelBuilder.Entity("Entities.Concrets.City", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("Code")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("isDeleted")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Cities");
                 });
 
             modelBuilder.Entity("Entities.Concrets.Color", b =>
@@ -136,7 +159,7 @@ namespace DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Colors", (string)null);
+                    b.ToTable("Colors");
                 });
 
             modelBuilder.Entity("Entities.Concrets.Country", b =>
@@ -160,7 +183,7 @@ namespace DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Countries", (string)null);
+                    b.ToTable("Countries");
                 });
 
             modelBuilder.Entity("Entities.Concrets.Currency", b =>
@@ -180,7 +203,7 @@ namespace DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Currencies", (string)null);
+                    b.ToTable("Currencies");
                 });
 
             modelBuilder.Entity("Entities.Concrets.DriveTrain", b =>
@@ -200,7 +223,7 @@ namespace DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("DriveTrains", (string)null);
+                    b.ToTable("DriveTrains");
                 });
 
             modelBuilder.Entity("Entities.Concrets.EngineCapacity", b =>
@@ -219,7 +242,7 @@ namespace DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("EngineCapacities", (string)null);
+                    b.ToTable("EngineCapacities");
                 });
 
             modelBuilder.Entity("Entities.Concrets.Fuel", b =>
@@ -239,7 +262,7 @@ namespace DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Fuels", (string)null);
+                    b.ToTable("Fuels");
                 });
 
             modelBuilder.Entity("Entities.Concrets.GearBox", b =>
@@ -259,7 +282,7 @@ namespace DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("GearBoxes", (string)null);
+                    b.ToTable("GearBoxes");
                 });
 
             modelBuilder.Entity("Entities.Concrets.Make", b =>
@@ -283,7 +306,7 @@ namespace DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Makes", (string)null);
+                    b.ToTable("Makes");
                 });
 
             modelBuilder.Entity("Entities.Concrets.MileageType", b =>
@@ -303,7 +326,7 @@ namespace DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("MileageTypes", (string)null);
+                    b.ToTable("MileageTypes");
                 });
 
             modelBuilder.Entity("Entities.Concrets.Model", b =>
@@ -328,7 +351,7 @@ namespace DAL.Migrations
 
                     b.HasIndex("MakeId");
 
-                    b.ToTable("Models", (string)null);
+                    b.ToTable("Models");
                 });
 
             modelBuilder.Entity("Entities.Concrets.OwnerCount", b =>
@@ -348,7 +371,7 @@ namespace DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("OwnerCounts", (string)null);
+                    b.ToTable("OwnerCounts");
                 });
 
             modelBuilder.Entity("Entities.Concrets.Seat", b =>
@@ -367,27 +390,7 @@ namespace DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Seats", (string)null);
-                });
-
-            modelBuilder.Entity("Entities.Concrets.Status", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("isDeleted")
-                        .HasColumnType("bit");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Statuses", (string)null);
+                    b.ToTable("Seats");
                 });
 
             modelBuilder.Entity("Entities.Concrets.Vehicle", b =>
@@ -401,12 +404,8 @@ namespace DAL.Migrations
                     b.Property<int>("BanId")
                         .HasColumnType("int");
 
-                    b.Property<bool>("BarterAvailable")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("City")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("CityId")
+                        .HasColumnType("int");
 
                     b.Property<int>("ColorId")
                         .HasColumnType("int");
@@ -440,12 +439,6 @@ namespace DAL.Migrations
                     b.Property<int>("GearBoxId")
                         .HasColumnType("int");
 
-                    b.Property<int>("GearId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("HuId")
-                        .HasColumnType("int");
-
                     b.Property<decimal>("Milage")
                         .HasColumnType("decimal(18,2)");
 
@@ -471,24 +464,36 @@ namespace DAL.Migrations
                     b.Property<int>("SeatId")
                         .HasColumnType("int");
 
-                    b.Property<int>("StatusId")
-                        .HasColumnType("int");
+                    b.Property<string>("VIN")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("VIN")
+                    b.Property<int>("VehicleConditionId")
                         .HasColumnType("int");
 
                     b.Property<int>("YearId")
                         .HasColumnType("int");
 
-                    b.Property<bool>("inCredit")
+                    b.Property<bool>("inAwait")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("isCancelled")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("isConfirmed")
                         .HasColumnType("bit");
 
                     b.Property<bool>("isDeleted")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("isVip")
+                        .HasColumnType("bit");
+
                     b.HasKey("Id");
 
                     b.HasIndex("BanId");
+
+                    b.HasIndex("CityId");
 
                     b.HasIndex("ColorId");
 
@@ -504,8 +509,6 @@ namespace DAL.Migrations
 
                     b.HasIndex("GearBoxId");
 
-                    b.HasIndex("HuId");
-
                     b.HasIndex("MileageTypeId");
 
                     b.HasIndex("ModelId");
@@ -514,11 +517,11 @@ namespace DAL.Migrations
 
                     b.HasIndex("SeatId");
 
-                    b.HasIndex("StatusId");
+                    b.HasIndex("VehicleConditionId");
 
                     b.HasIndex("YearId");
 
-                    b.ToTable("Vehicles", (string)null);
+                    b.ToTable("Vehicles");
                 });
 
             modelBuilder.Entity("Entities.Concrets.VehicleCondition", b =>
@@ -538,7 +541,7 @@ namespace DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("HUs", (string)null);
+                    b.ToTable("VehicleConditions");
                 });
 
             modelBuilder.Entity("Entities.Concrets.VehicleImage", b =>
@@ -559,11 +562,14 @@ namespace DAL.Migrations
                     b.Property<bool>("isDeleted")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("isMain")
+                        .HasColumnType("bit");
+
                     b.HasKey("Id");
 
                     b.HasIndex("VehicleId");
 
-                    b.ToTable("VehicleImages", (string)null);
+                    b.ToTable("VehicleImages");
                 });
 
             modelBuilder.Entity("Entities.Concrets.VehicleReport", b =>
@@ -592,7 +598,7 @@ namespace DAL.Migrations
 
                     b.HasIndex("VehicleId");
 
-                    b.ToTable("VehicleReports", (string)null);
+                    b.ToTable("VehicleReports");
                 });
 
             modelBuilder.Entity("Entities.Concrets.VehicleSupply", b =>
@@ -617,7 +623,7 @@ namespace DAL.Migrations
 
                     b.HasIndex("VehicleId");
 
-                    b.ToTable("VehicleSupplies", (string)null);
+                    b.ToTable("VehicleSupplies");
                 });
 
             modelBuilder.Entity("Entities.Concrets.Year", b =>
@@ -636,7 +642,7 @@ namespace DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Years", (string)null);
+                    b.ToTable("Years");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -775,7 +781,7 @@ namespace DAL.Migrations
             modelBuilder.Entity("Entities.Concrets.Model", b =>
                 {
                     b.HasOne("Entities.Concrets.Make", "Make")
-                        .WithMany()
+                        .WithMany("Models")
                         .HasForeignKey("MakeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -788,6 +794,12 @@ namespace DAL.Migrations
                     b.HasOne("Entities.Concrets.Ban", "Ban")
                         .WithMany()
                         .HasForeignKey("BanId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Entities.Concrets.City", "City")
+                        .WithMany("Vehicles")
+                        .HasForeignKey("CityId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -833,12 +845,6 @@ namespace DAL.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Entities.Concrets.VehicleCondition", "HU")
-                        .WithMany()
-                        .HasForeignKey("HuId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Entities.Concrets.MileageType", "MileageType")
                         .WithMany()
                         .HasForeignKey("MileageTypeId")
@@ -863,9 +869,9 @@ namespace DAL.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Entities.Concrets.Status", "Status")
+                    b.HasOne("Entities.Concrets.VehicleCondition", "VehicleCondition")
                         .WithMany()
-                        .HasForeignKey("StatusId")
+                        .HasForeignKey("VehicleConditionId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -876,6 +882,8 @@ namespace DAL.Migrations
                         .IsRequired();
 
                     b.Navigation("Ban");
+
+                    b.Navigation("City");
 
                     b.Navigation("Color");
 
@@ -891,8 +899,6 @@ namespace DAL.Migrations
 
                     b.Navigation("GearBox");
 
-                    b.Navigation("HU");
-
                     b.Navigation("MileageType");
 
                     b.Navigation("Model");
@@ -901,7 +907,7 @@ namespace DAL.Migrations
 
                     b.Navigation("Seat");
 
-                    b.Navigation("Status");
+                    b.Navigation("VehicleCondition");
 
                     b.Navigation("Year");
                 });
@@ -980,6 +986,16 @@ namespace DAL.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Entities.Concrets.City", b =>
+                {
+                    b.Navigation("Vehicles");
+                });
+
+            modelBuilder.Entity("Entities.Concrets.Make", b =>
+                {
+                    b.Navigation("Models");
                 });
 
             modelBuilder.Entity("Entities.Concrets.Model", b =>

@@ -1,42 +1,37 @@
 ﻿using Core.Entities.Concrets;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Entities.Concrets
 {
-    public class Vehicle:Entity
+    public class Vehicle : Entity
     {
         public int Id { get; set; }
         public int ModelId { get; set; }
         public int BanId { get; set; }
         public int FuelId { get; set; }
-        public int GearId { get; set; }
         public int GearBoxId { get; set; }
-        public decimal Milage { get; set; }
-        public int MileageTypeId { get; set; }
         public int YearId { get; set; }
         public int ColorId { get; set; }
         public int EngineCapacityId { get; set; }
-        public decimal Price { get; set; }
+        public int DriveTrainId { get; set; }
         public int CurrencyId { get; set; }
-        public decimal EnginePower { get; set; }
         public int OwnerId { get; set; }
         public int CountryId { get; set; }
-        public int HuId { get; set; }
+        public int VehicleConditionId { get; set; }
         public int SeatId { get; set; }
-        public int VIN { get; set; }
+        public decimal Price { get; set; }
+        public decimal EnginePower { get; set; }
+        public decimal Milage { get; set; }
+        public int MileageTypeId { get; set; }
+        public int PhoneNumber { get; set; }
+        public string VIN { get; set; }
         public string Description { get; set; }
         public string OwnerName { get; set; }
-        public string City { get; set; }
+        public int CityId { get; set; }
         public string Email { get; set; }
-        public int PhoneNumber { get; set; }
-        public bool inCredit { get; set; }
-        public bool BarterAvailable { get; set; }
-        public int StatusId { get; set; }
-
+        public bool isVip { get; set; }
+        public bool isConfirmed { get; set; }
+        public bool isCancelled { get; set; }
+        public bool inAwait { get; set; }
 
         public Model Model { get; set; }
         public Ban Ban { get; set; }
@@ -50,11 +45,11 @@ namespace Entities.Concrets
         public Currency Currency { get; set; }
         public OwnerCount Owner { get; set; }
         public Country Country { get; set; }
-        public VehicleCondition HU { get; set; }
-        public List<VehicleReport> Reports { get; set; }
+        public City City { get; set; }
+        public VehicleCondition VehicleCondition { get; set; }
         public Seat Seat { get; set; }
-        public Status Status { get; set; }
-        public List<VehicleSupply>Supplies { get; set; }
+        public List<VehicleReport> Reports { get; set; }
+        public List<VehicleSupply> Supplies { get; set; }
         public List<VehicleImage> Images { get; set; }
         public Vehicle()
         {

@@ -530,3 +530,4 @@ C:\Users\samir\OneDrive\Desktop\Final\TurboAzClone\bin\Debug\net6.0\FluentValida
 C:\Users\samir\OneDrive\Desktop\Final\TurboAzClone\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 C:\Users\samir\OneDrive\Desktop\Final\TurboAzClone\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\samir\OneDrive\Desktop\Final\TurboAzClone\obj\Debug\net6.0\TurboAzClone.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\samir\OneDrive\Desktop\Final\TurboAzClone\bin\Debug\net6.0\libman.json
