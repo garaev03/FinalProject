@@ -1,5 +1,3 @@
-using Entities.Concrets;
-
 namespace Entities.DTOs.MakeDtos{
     public class MakeGetDto{
         public int Id{get; set;}

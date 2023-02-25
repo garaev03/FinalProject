@@ -1,0 +1,14 @@
+﻿@model List<VehicleGetDto>
+
+@{
+    ViewData["Title"] = "Gözləmədə olanlar";
+}
+
+<div class="">
+    <partial name="/Views/Shared/_AdsPartialView.cshtml"></partial>
+</div>
+<div>
+    @await Component.InvokeAsync("Vehicle",new{vehicles=Model})
+</div>
+
+

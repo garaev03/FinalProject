@@ -130,16 +130,16 @@
                         </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                               asp-controller="vehicles" asp-action="news" aria-expanded="false">
+                               asp-controller="vehicles" asp-action="all" aria-expanded="false">
                                 <i class="fa-solid fa-car-side me-3"></i>
-                                <span class="hide-menu">Yeni Maşınlar</span>
+                                <span class="hide-menu">Bütün Maşınlar</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                               asp-controller="vehicles" asp-action="all" aria-expanded="false">
+                               asp-controller="vehicles" asp-action="news" aria-expanded="false">
                                 <i class="fa-solid fa-car-rear me-3"></i>
-                                <span class="hide-menu">Bütün Maşınlar</span>
+                                <span class="hide-menu">Yeni Maşınlar</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
@@ -147,6 +147,20 @@
                                asp-controller="vehicles" asp-action="cancels" aria-expanded="false">
                                 <i class="fa-solid fa-car-rear me-3"></i>
                                 <span class="hide-menu">Imtina ol. Maşınlar</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                               asp-controller="vehicles" asp-action="editeds" aria-expanded="false">
+                                <i class="fa-solid fa-car-rear me-3"></i>
+                                <span class="hide-menu">Yenilənmiş Maşınlar</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                               asp-controller="vehicles" asp-action="expireds" aria-expanded="false">
+                                <i class="fa-solid fa-car-rear me-3"></i>
+                                <span class="hide-menu">Müd. başa çat. Maşınlar</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
@@ -171,7 +185,6 @@
                                     <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="vehiclereports" asp-action="index"> Nəqliyyat vəziyyətləri</a></li>
                                     <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="seats" asp-action="index"> Oturacaq sayları</a></li>
                                     <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="ownercounts" asp-action="index"> Sahib sayları</a></li>
-                                    <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="vehicleconditions" asp-action="index"> Nəqliyyat mövcudluqları</a></li>
                                     <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="vehiclesupplies" asp-action="index"> Nəqliyyat təchizatları</a></li>
                                     <li class="nav-item"> <a class="nav-link waves-effect waves-dark text-dark" asp-controller="years" asp-action="index"> Nəqliyyat illəri</a></li>
                                 </ul>
@@ -222,6 +235,7 @@
     <script src="~/admin/js/pages/dashboards/dashboard1.js"></script>
     <script src="~/admin/js/image-slider.js"></script>
     <script src="~/admin/js/drop-car.js"></script>
+    <script src="~/admin/js/search-vehicle.js"></script>
 
 </body>
 

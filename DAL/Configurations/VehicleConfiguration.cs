@@ -1,14 +1,9 @@
-﻿using Entities.Concrets;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-
-namespace DAL.Configurations
+﻿namespace DAL.Configurations;
+public class VehicleConfiguration : IEntityTypeConfiguration<Vehicle>
 {
-    public class VehicleConfiguration : IEntityTypeConfiguration<Vehicle>
+    public void Configure(EntityTypeBuilder<Vehicle> builder)
     {
-        public void Configure(EntityTypeBuilder<Vehicle> builder)
-        {
-            builder.Property(v => v.VIN);
-        }
+        builder.Property(v => v.CreatedDate).HasDefaultValueSql("getdate()");
+        builder.Property(v => v.ExpiredDate).HasDefaultValueSql("dateadd(m,1,getdate())");
     }
 }

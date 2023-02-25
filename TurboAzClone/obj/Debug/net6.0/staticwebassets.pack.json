@@ -841,6 +841,10 @@
       "PackagePath": "staticwebassets\\admin\\js\\pages\\dashboards\\dashboard1.js"
     },
     {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\js\\search-vehicle.js",
+      "PackagePath": "staticwebassets\\admin\\js\\search-vehicle.js"
+    },
+    {
       "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\admin\\js\\sidebarmenu.js",
       "PackagePath": "staticwebassets\\admin\\js\\sidebarmenu.js"
     },
@@ -1605,6 +1609,14 @@
       "PackagePath": "staticwebassets\\admin\\plugins\\popper.js\\dist\\umd\\popper.min.js"
     },
     {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\image-fullscreen.css",
+      "PackagePath": "staticwebassets\\assets\\image-fullscreen.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\image-slider.css",
+      "PackagePath": "staticwebassets\\assets\\image-slider.css"
+    },
+    {
       "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\ban-images\\707c1b25-b272-49c5-a94d-3c34d890a014-85562d79ff5cd98affde0e96f9c5b4b4.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\ban-images\\707c1b25-b272-49c5-a94d-3c34d890a014-85562d79ff5cd98affde0e96f9c5b4b4.jpg"
     },
@@ -1641,12 +1653,80 @@
       "PackagePath": "staticwebassets\\assets\\images\\make-images\\d65f810f-ab0a-4a25-bd7c-d9bbf6443e9c-wp6114896.png"
     },
     {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\vehicle-images\\03753be6-85ed-4178-a489-da722e8ae3a2-wp6114896.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vehicle-images\\03753be6-85ed-4178-a489-da722e8ae3a2-wp6114896.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\vehicle-images\\0d6de8f1-8590-4509-bebb-b77974023998-wp6114896.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vehicle-images\\0d6de8f1-8590-4509-bebb-b77974023998-wp6114896.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\vehicle-images\\18b71a89-6323-4ba0-b83c-f299a5bf9cb7-In4x5M.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\vehicle-images\\18b71a89-6323-4ba0-b83c-f299a5bf9cb7-In4x5M.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\vehicle-images\\19179dd0-8998-4d34-a85e-6659cc254c13-wp6114896.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vehicle-images\\19179dd0-8998-4d34-a85e-6659cc254c13-wp6114896.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\vehicle-images\\206f916d-5d54-41ce-a434-7f7dd5a80375-WhatsApp_Image_2023-02-13_at_22.25.53_500x500.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\vehicle-images\\206f916d-5d54-41ce-a434-7f7dd5a80375-WhatsApp_Image_2023-02-13_at_22.25.53_500x500.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\vehicle-images\\33081608-e023-4194-a773-1aeb9fc3c054-WhatsApp_Image_2023-02-13_at_22.25.53_500x500.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\vehicle-images\\33081608-e023-4194-a773-1aeb9fc3c054-WhatsApp_Image_2023-02-13_at_22.25.53_500x500.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\vehicle-images\\3824ebf5-d619-40a4-adb4-ecba7339274d-wp6114896.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vehicle-images\\3824ebf5-d619-40a4-adb4-ecba7339274d-wp6114896.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\vehicle-images\\433a38f3-05bb-4e60-900f-2c19a1a99936-WhatsApp_Image_2023-02-13_at_22.25.53_500x500.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\vehicle-images\\433a38f3-05bb-4e60-900f-2c19a1a99936-WhatsApp_Image_2023-02-13_at_22.25.53_500x500.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\vehicle-images\\459d60c6-5d36-4b16-975e-76bab27fa467-wp6114896.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vehicle-images\\459d60c6-5d36-4b16-975e-76bab27fa467-wp6114896.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\vehicle-images\\55cae9de-ab10-4955-a2ea-69bbcc98d90a-blue-swirl-wallpaper.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vehicle-images\\55cae9de-ab10-4955-a2ea-69bbcc98d90a-blue-swirl-wallpaper.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\vehicle-images\\6c8c4f9c-6b90-4eef-8a13-4231f8d07fad-wp6114896.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vehicle-images\\6c8c4f9c-6b90-4eef-8a13-4231f8d07fad-wp6114896.png"
+    },
+    {
       "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\vehicle-images\\6de99943-b7ff-4a5d-990e-0e25d6f2a0fb-wp6114896.png",
       "PackagePath": "staticwebassets\\assets\\images\\vehicle-images\\6de99943-b7ff-4a5d-990e-0e25d6f2a0fb-wp6114896.png"
     },
     {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\vehicle-images\\713c4bce-9a79-4618-a59c-1ce8b857d975-WhatsApp_Image_2023-02-13_at_22.25.53_500x500.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\vehicle-images\\713c4bce-9a79-4618-a59c-1ce8b857d975-WhatsApp_Image_2023-02-13_at_22.25.53_500x500.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\vehicle-images\\7e494fee-7a30-4f34-909f-c574950de774-In4x5M.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\vehicle-images\\7e494fee-7a30-4f34-909f-c574950de774-In4x5M.jpg"
+    },
+    {
       "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\vehicle-images\\85602463-a065-4753-8556-9ca789cf2bf4-wp6114896.png",
       "PackagePath": "staticwebassets\\assets\\images\\vehicle-images\\85602463-a065-4753-8556-9ca789cf2bf4-wp6114896.png"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\vehicle-images\\90ebba9b-8ed2-4d8e-a4a5-761daa2648c4-In4x5M.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\vehicle-images\\90ebba9b-8ed2-4d8e-a4a5-761daa2648c4-In4x5M.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\vehicle-images\\9d16df0b-cbfe-4fe8-a9d1-afd0884ea50a-85562d79ff5cd98affde0e96f9c5b4b4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\vehicle-images\\9d16df0b-cbfe-4fe8-a9d1-afd0884ea50a-85562d79ff5cd98affde0e96f9c5b4b4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\vehicle-images\\d1648fbc-4e3c-4cbd-b959-816ff26191e2-WhatsApp_Image_2023-02-13_at_22.25.53_500x500.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\vehicle-images\\d1648fbc-4e3c-4cbd-b959-816ff26191e2-WhatsApp_Image_2023-02-13_at_22.25.53_500x500.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\vehicle-images\\d90f50f0-7028-4ac6-9004-8fb0a1782fee-In4x5M.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\vehicle-images\\d90f50f0-7028-4ac6-9004-8fb0a1782fee-In4x5M.jpg"
     },
     {
       "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\vehicle-images\\d9db575d-e515-4818-8e04-e94125f43ca2-wp6114896.png",
@@ -1657,12 +1737,48 @@
       "PackagePath": "staticwebassets\\assets\\images\\vehicle-images\\dfcbbd84-e7de-4f17-913e-6389096f0f63-photo-1616455579100-2ceaa4eb2d37.jpeg"
     },
     {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\vehicle-images\\e8f72da2-52de-4ae7-93d9-cecf3baf7960-In4x5M.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\vehicle-images\\e8f72da2-52de-4ae7-93d9-cecf3baf7960-In4x5M.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\vehicle-images\\eabcba16-6db5-4b81-8171-57d71b2988f3-In4x5M.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\vehicle-images\\eabcba16-6db5-4b81-8171-57d71b2988f3-In4x5M.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\images\\vehicle-images\\ee4fc10d-a05f-4658-8166-8b2952d97c35-WhatsApp_Image_2023-02-13_at_22.25.53_500x500.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\vehicle-images\\ee4fc10d-a05f-4658-8166-8b2952d97c35-WhatsApp_Image_2023-02-13_at_22.25.53_500x500.jpg"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\js\\image-fullscreen.js",
+      "PackagePath": "staticwebassets\\assets\\js\\image-fullscreen.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\js\\image-slider.js",
+      "PackagePath": "staticwebassets\\assets\\js\\image-slider.js"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\js\\splide.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\splide.min.js"
+    },
+    {
       "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\js\\yeni-elan.js",
       "PackagePath": "staticwebassets\\assets\\js\\yeni-elan.js"
     },
     {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\login.css",
+      "PackagePath": "staticwebassets\\assets\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\splide.min.css",
+      "PackagePath": "staticwebassets\\assets\\splide.min.css"
+    },
+    {
       "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\style.css",
       "PackagePath": "staticwebassets\\assets\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\assets\\vehicle-details.css",
+      "PackagePath": "staticwebassets\\assets\\vehicle-details.css"
     },
     {
       "Id": "C:\\Users\\samir\\OneDrive\\Desktop\\Final\\TurboAzClone\\wwwroot\\lib\\bootstrap\\LICENSE",

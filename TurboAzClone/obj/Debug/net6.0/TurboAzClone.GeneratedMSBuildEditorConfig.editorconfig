@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\samir\OneDrive\Desktop\Final\TurboAzClone
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/samir/OneDrive/Desktop/Final/TurboAzClone/Areas/Admin/Views/Accounts/All.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudHNcQWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/samir/OneDrive/Desktop/Final/TurboAzClone/Areas/Admin/Views/Bans/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQmFuc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -196,16 +200,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/samir/OneDrive/Desktop/Final/TurboAzClone/Areas/Admin/Views/VehicleConditions/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVmVoaWNsZUNvbmRpdGlvbnNcQ3JlYXRlLmNzaHRtbA==
+[C:/Users/samir/OneDrive/Desktop/Final/TurboAzClone/Areas/Admin/Views/Shared/_SearchPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9TZWFyY2hQYXJ0aWFsVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/samir/OneDrive/Desktop/Final/TurboAzClone/Areas/Admin/Views/VehicleConditions/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVmVoaWNsZUNvbmRpdGlvbnNcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/samir/OneDrive/Desktop/Final/TurboAzClone/Areas/Admin/Views/VehicleConditions/Update.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVmVoaWNsZUNvbmRpdGlvbnNcVXBkYXRlLmNzaHRtbA==
+[C:/Users/samir/OneDrive/Desktop/Final/TurboAzClone/Areas/Admin/Views/Shared/_VehicleTablePartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WZWhpY2xlVGFibGVQYXJ0aWFsVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/samir/OneDrive/Desktop/Final/TurboAzClone/Areas/Admin/Views/VehicleReports/Create.cshtml]
@@ -232,6 +232,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVmVoaWNsZVN1cHBsaWVzXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/samir/OneDrive/Desktop/Final/TurboAzClone/Areas/Admin/Views/Vehicles/All.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVmVoaWNsZXNcQWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/samir/OneDrive/Desktop/Final/TurboAzClone/Areas/Admin/Views/Vehicles/Cancels.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVmVoaWNsZXNcQ2FuY2Vscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/samir/OneDrive/Desktop/Final/TurboAzClone/Areas/Admin/Views/Vehicles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVmVoaWNsZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/samir/OneDrive/Desktop/Final/TurboAzClone/Areas/Admin/Views/Vehicles/Editeds.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVmVoaWNsZXNcRWRpdGVkcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/samir/OneDrive/Desktop/Final/TurboAzClone/Areas/Admin/Views/Vehicles/Expireds.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVmVoaWNsZXNcRXhwaXJlZHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/samir/OneDrive/Desktop/Final/TurboAzClone/Areas/Admin/Views/Vehicles/News.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVmVoaWNsZXNcTmV3cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -256,6 +276,30 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/samir/OneDrive/Desktop/Final/TurboAzClone/VIews/Account/Awaits.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vklld3NcQWNjb3VudFxBd2FpdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/samir/OneDrive/Desktop/Final/TurboAzClone/VIews/Account/Cancelleds.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vklld3NcQWNjb3VudFxDYW5jZWxsZWRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/samir/OneDrive/Desktop/Final/TurboAzClone/VIews/Account/Confirmeds.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vklld3NcQWNjb3VudFxDb25maXJtZWRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/samir/OneDrive/Desktop/Final/TurboAzClone/VIews/Account/Expireds.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vklld3NcQWNjb3VudFxFeHBpcmVkcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/samir/OneDrive/Desktop/Final/TurboAzClone/VIews/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vklld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/samir/OneDrive/Desktop/Final/TurboAzClone/VIews/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vklld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/samir/OneDrive/Desktop/Final/TurboAzClone/VIews/Error/NotFound.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vklld3NcRXJyb3JcTm90Rm91bmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -268,8 +312,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vklld3NcU2hhcmVkXENvbXBvbmVudHNcVmVoaWNsZVxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/samir/OneDrive/Desktop/Final/TurboAzClone/VIews/Shared/_AdsPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vklld3NcU2hhcmVkXF9BZHNQYXJ0aWFsVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/samir/OneDrive/Desktop/Final/TurboAzClone/VIews/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vklld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/samir/OneDrive/Desktop/Final/TurboAzClone/VIews/Vehicle/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vklld3NcVmVoaWNsZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/samir/OneDrive/Desktop/Final/TurboAzClone/VIews/Vehicle/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vklld3NcVmVoaWNsZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/samir/OneDrive/Desktop/Final/TurboAzClone/VIews/Vehicle/New.cshtml]

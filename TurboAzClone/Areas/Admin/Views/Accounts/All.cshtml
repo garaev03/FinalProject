@@ -1,0 +1,38 @@
+﻿@model List<AppUser>
+@{
+    ViewData["Title"] = "All";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Ad</th>
+            <th scope="col">Username</th>
+            <th scope="col">Nömrə</th>
+            <th scope="col">Email</th>
+            <th scope="col">Ayarlar</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row" width="400px">@item.Id</th>
+                <td>@item.FirstName</td>
+                <td>@item.UserName</td>
+                <td>+994 @item.PhoneNumber</td>
+                <td>@item.Email</td>
+                <td>
+                    <a class="btn btn-primary">
+                        Admin et
+                    </a>
+                       <a class="btn btn-danger text-light">
+                        Adminlikdən al
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

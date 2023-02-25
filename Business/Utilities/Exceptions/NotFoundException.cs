@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Business.Utilities.Exceptions
+﻿namespace Business.Utilities.Exceptions;
+public class NotFoundException:Exception
 {
-    public class NotFoundException:Exception
-    {
-        public NotFoundException(string message) : base(message) { }
-    }
+    public NotFoundException(string message) : base(message) { }
 }

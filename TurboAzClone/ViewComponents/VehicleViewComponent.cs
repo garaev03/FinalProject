@@ -1,4 +1,5 @@
 ﻿using Business.Services.Interfaces;
+using Entities.DTOs.VehicleDtos;
 using Microsoft.AspNetCore.Mvc;
 
 namespace TurboAzClone.ViewComponents
@@ -11,9 +12,10 @@ namespace TurboAzClone.ViewComponents
             _service = service;
         }
 
-        public async Task<IViewComponentResult> InvokeAsync()
+        public async Task<IViewComponentResult> InvokeAsync(List<VehicleGetDto> vehicles)
         {
-            var vehicles= await _service.GetAllAsync(x=>!x.isDeleted && x.isConfirmed);
+            if(vehicles is null)
+                vehicles= await _service.GetAllAsync(x=>!x.isDeleted && x.isConfirmed,true);
             return View(vehicles);
         }
     }

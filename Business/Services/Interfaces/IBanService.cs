@@ -1,18 +1,9 @@
-﻿using Entities.DTOs.BanDtos;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Business.Services.Interfaces
+﻿namespace Business.Services.Interfaces;
+public interface IBanService
 {
-    public interface IBanService
-    {
-        Task<List<BanGetDto>> GetAllAsync();
-        Task<BanGetDto> GetByIdAsync(int id);
-        Task CreateAsync(BanPostDto postDto);
-        Task UpdateAsync(BanUpdateDto updateDto);
-        Task DeleteAsync(int id);
-    }
+    Task<List<BanGetDto>> GetAllAsync();
+    Task<BanGetDto> GetByIdAsync(int id);
+    Task CreateAsync(BanPostDto postDto);
+    Task UpdateAsync(BanUpdateDto updateDto);
+    Task DeleteAsync(int id);
 }

@@ -1,5 +1,3 @@
-using Entities.Concrets;
-
 namespace Entities.DTOs.ModelDtos
 {
     public class ModelGetDto

@@ -1,114 +1,43 @@
 ﻿@model List<VehicleGetDto>
 @{
-    ViewData["Title"] = "News";
+    ViewData["Title"] = "Yenilər";
 }
 
 
+<div>
+    <partial name="../Shared/_SearchPartialView.cshtml"></partial>
 
 @foreach (var item in Model)
 {
-    <div class="card border">
 
-        <div class="card-header d-flex justify-content-between ps-3 ">
-            <div>
-                <p><b>#ID</b> Marka Model</p>
+    <div class="card border">
+        <div class="card-header d-flex justify-content-between ps-3 drop-car ">
+            <div class="d-flex">
+                <p class="vehicle-makes-models">@item.Model.Make.Name @item.Model.Name</p>
+                <p class="vehicle-ids"><b>#@item.Id</b></p>
             </div>
-            <a class="drop-car me-4  btn btn-warning ">
+            <a class="me-4  btn">
                 <i class="fa-solid fa-chevron-down"></i>
             </a>
         </div>
         <div class="vehicle-body" style="display: none;">
-
-            <div class="card-body d-flex pb-0">
-
-                <div class="mt-5">
-                    <div class="me-4 d-flex justify-content-between" style="position: relative;">
-
-                        <div style="position: absolute;left: 0;top: 50%;">
-                            <button class="btn btn-sm btn-secondary rounded-circle" onclick="plusDivs(-1)">&#10094;</button>
-                        </div>
-
-                        <img class="myImg" style="width: 300px; height: 270px;"
-                         src="~/assets/images/vehicle-images/85602463-a065-4753-8556-9ca789cf2bf4-wp6114896.png" />
-
-                        <div style="position: absolute;right: 0;top: 50%;">
-                            <button class="btn btn-sm btn-secondary rounded-circle" onclick="plusDivs(1)">&#10095;</button>
-                        </div>
-
-                        <div id="myModal" class="modal">
-                            <span class="close">&times;</span>
-                            <img id="modal-img" class="modal-content"
-                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQS2ol73JZj6-IqypxPZXYS3rRiPwKteoD8vezk9QsRdkjt3jEn&usqp=CAU">
-                        </div>
-                    </div>
+            <partial name="../Shared/_VehicleTablePartialView.cshtml" model="item"></partial>
+            <div class="ms-3 me-3 mb-3">
+                <div class="form-outline">
+                    <label class="form-label" for="textAreaExample">Məlumat</label>
+                    <p class="form-control">@item.Description</p>
                 </div>
-
-                <div>
-                    <h5 class="card-title"><b>Marka</b> Model #Id</h5>
-                    <div class="d-flex">
-                        <table class="table table-striped table-hover mt-2">
-                            <tbody>
-
-                                <tr>
-                                    <th scope="row">Ban növü</th>
-                                    <td style="width: 20rem;text-align: center;">Otto</td>
-                                    <th scope="row">Odometr</th>
-                                    <td style="width: 20rem;text-align: center;">Larry</td>
-                                    <th scope="row">Oturacaq sayı</th>
-                                    <td style="width: 20rem;text-align: center;">Larry</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Mühərrik həcmi</th>
-                                    <td style="width: 20rem;text-align: center;">Larry</td>
-                                    <th scope="row">İl</th>
-                                    <td style="width: 20rem;text-align: center;">Larry</td>
-                                    <th scope="row">Email</th>
-                                    <td style="width: 20rem;text-align: center;">Larry</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Mühərrik gücü</th>
-                                    <td style="width: 20rem;text-align: center;">Otto</td>
-                                    <th scope="row">Rəng</th>
-                                    <td style="width: 20rem;text-align: center;">Larry</td>
-                                    <th scope="row">Sahibin adı</th>
-                                    <td style="width: 20rem;text-align: center;">Larry</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Ötürücü</th>
-                                    <td style="width: 20rem;text-align: center;">Otto</td>
-                                    <th scope="row">VİN </th>
-                                    <td style="width: 20rem;text-align: center;">Larry</td>
-                                    <th scope="row">Sahibin nömrəsi</th>
-                                    <td style="width: 20rem;text-align: center;">Larry</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Sürət qutusu</th>
-                                    <td style="width: 20rem;text-align: center;">Otto</td>
-                                    <th scope="row">Şəhər</th>
-                                    <td style="width: 20rem;text-align: center;">Larry</td>
-                                    <th scope="row">Qiyməti</th>
-                                    <td style="width: 20rem;text-align: center;">Larry məzənnə</td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
             </div>
-
             <div class="d-flex justify-content-end me-3 mb-3">
-                <div class="text-center">
-                    <a class="btn btn-success text-light" href="#">Təsdiqlə</a>
-                </div>
-                <div class="text-center me-3 ms-3">
-                    <a href="" class="btn btn-warning text-light">Düzəliş et</a>
+                <div class="text-center me-3">
+                    <a asp-action="Confirm" asp-route-id="@item.Id" class="btn btn-success text-light">Təsdiqlə</a>
                 </div>
                 <div class="text-center">
-                    <a class="btn btn-danger text-light" href="#">İmtina et</a>
+                    <a asp-action="Cancel" asp-route-id="@item.Id" class="btn btn-danger text-light">İmtina et</a>
                 </div>
             </div>
 
         </div>
     </div>
 }
+</div>

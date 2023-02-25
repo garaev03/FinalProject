@@ -1,11 +1,4 @@
-﻿using Entities.Concrets;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Entities.DTOs.VehicleDtos
+﻿namespace Entities.DTOs.VehicleDtos
 {
     public class VehicleGetDto
     {
@@ -25,18 +18,26 @@ namespace Entities.DTOs.VehicleDtos
         public int VehicleConditionId { get; set; }
         public int SeatId { get; set; }
         public int CityId { get; set; }
-        public decimal Milage { get; set; }
-        public decimal Price { get; set; }
-        public decimal EnginePower { get; set; }
+        public int Milage { get; set; }
+        public int Price { get; set; }
+        public int EnginePower { get; set; }
         public string? VIN { get; set; }
         public string? Description { get; set; }
         public string? OwnerName { get; set; }
         public string? Email { get; set; }
-        public int PhoneNumber { get; set; }
+        public int PhoneNumberId { get; set; }
+        public bool isCredit { get; set; }
+        public bool isBarter { get; set; }
         public bool isConfirmed { get; set; }
         public bool isCancelled { get; set; }
         public bool inAwait { get; set; }
+        public bool isExpired { get; set; }
+        public bool isEdited { get; set; }
+        public string? PINCode { get; set; }
+        public DateTime? CreatedDate { get; set; }
+        public DateTime? ExpiredDate { get; set; }
 
+        public PhoneNumber? PhoneNumber { get; set; }
         public Model? Model { get; set; }
         public Ban? Ban { get; set; }
         public Fuel? Fuel { get; set; }
@@ -50,7 +51,6 @@ namespace Entities.DTOs.VehicleDtos
         public OwnerCount? Owner { get; set; }
         public Country? Country { get; set; }
         public City? City { get; set; }
-        public VehicleCondition? VehicleCondition { get; set; }
         public Seat? Seat { get; set; }
         public List<VehicleReport> Reports { get; set; }
         public List<VehicleSupply> Supplies { get; set; }

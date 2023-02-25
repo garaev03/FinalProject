@@ -234,8 +234,12 @@ namespace DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("Value")
-                        .HasColumnType("int");
+                    b.Property<string>("ConvertedValue")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<float>("Value")
+                        .HasColumnType("real");
 
                     b.Property<bool>("isDeleted")
                         .HasColumnType("bit");
@@ -374,6 +378,37 @@ namespace DAL.Migrations
                     b.ToTable("OwnerCounts");
                 });
 
+            modelBuilder.Entity("Entities.Concrets.PhoneNumber", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime?>("MonthlyCreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("MonthlyExpireDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Number")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("forOnce")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("isDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("isMonthly")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PhoneNumbers");
+                });
+
             modelBuilder.Entity("Entities.Concrets.Seat", b =>
                 {
                     b.Property<int>("Id")
@@ -413,6 +448,9 @@ namespace DAL.Migrations
                     b.Property<int>("CountryId")
                         .HasColumnType("int");
 
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("CurrencyId")
                         .HasColumnType("int");
 
@@ -427,11 +465,17 @@ namespace DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("EngineCapacityConverted")
+                        .HasColumnType("int");
+
                     b.Property<int>("EngineCapacityId")
                         .HasColumnType("int");
 
-                    b.Property<decimal>("EnginePower")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<int>("EnginePower")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("ExpiredDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("FuelId")
                         .HasColumnType("int");
@@ -439,8 +483,8 @@ namespace DAL.Migrations
                     b.Property<int>("GearBoxId")
                         .HasColumnType("int");
 
-                    b.Property<decimal>("Milage")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<int>("Milage")
+                        .HasColumnType("int");
 
                     b.Property<int>("MileageTypeId")
                         .HasColumnType("int");
@@ -455,11 +499,15 @@ namespace DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PhoneNumber")
+                    b.Property<string>("PINCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PhoneNumberId")
                         .HasColumnType("int");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<int>("Price")
+                        .HasColumnType("int");
 
                     b.Property<int>("SeatId")
                         .HasColumnType("int");
@@ -468,13 +516,13 @@ namespace DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("VehicleConditionId")
-                        .HasColumnType("int");
-
                     b.Property<int>("YearId")
                         .HasColumnType("int");
 
                     b.Property<bool>("inAwait")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("isBarter")
                         .HasColumnType("bit");
 
                     b.Property<bool>("isCancelled")
@@ -483,7 +531,16 @@ namespace DAL.Migrations
                     b.Property<bool>("isConfirmed")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("isCredit")
+                        .HasColumnType("bit");
+
                     b.Property<bool>("isDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("isEdited")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("isExpired")
                         .HasColumnType("bit");
 
                     b.Property<bool>("isVip")
@@ -515,33 +572,13 @@ namespace DAL.Migrations
 
                     b.HasIndex("OwnerId");
 
-                    b.HasIndex("SeatId");
+                    b.HasIndex("PhoneNumberId");
 
-                    b.HasIndex("VehicleConditionId");
+                    b.HasIndex("SeatId");
 
                     b.HasIndex("YearId");
 
                     b.ToTable("Vehicles");
-                });
-
-            modelBuilder.Entity("Entities.Concrets.VehicleCondition", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("isDeleted")
-                        .HasColumnType("bit");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("VehicleConditions");
                 });
 
             modelBuilder.Entity("Entities.Concrets.VehicleImage", b =>
@@ -863,15 +900,15 @@ namespace DAL.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Entities.Concrets.Seat", "Seat")
-                        .WithMany()
-                        .HasForeignKey("SeatId")
+                    b.HasOne("Entities.Concrets.PhoneNumber", "PhoneNumber")
+                        .WithMany("Vehicles")
+                        .HasForeignKey("PhoneNumberId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Entities.Concrets.VehicleCondition", "VehicleCondition")
+                    b.HasOne("Entities.Concrets.Seat", "Seat")
                         .WithMany()
-                        .HasForeignKey("VehicleConditionId")
+                        .HasForeignKey("SeatId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -905,9 +942,9 @@ namespace DAL.Migrations
 
                     b.Navigation("Owner");
 
-                    b.Navigation("Seat");
+                    b.Navigation("PhoneNumber");
 
-                    b.Navigation("VehicleCondition");
+                    b.Navigation("Seat");
 
                     b.Navigation("Year");
                 });
@@ -1001,6 +1038,11 @@ namespace DAL.Migrations
             modelBuilder.Entity("Entities.Concrets.Model", b =>
                 {
                     b.Navigation("Cars");
+                });
+
+            modelBuilder.Entity("Entities.Concrets.PhoneNumber", b =>
+                {
+                    b.Navigation("Vehicles");
                 });
 
             modelBuilder.Entity("Entities.Concrets.Vehicle", b =>

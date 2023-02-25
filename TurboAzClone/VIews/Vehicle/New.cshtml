@@ -296,26 +296,23 @@
 
             <div class="fifth-group ms-5 ps-3">
                 <div class="checkboxes ms-5 ps-5 mt-3">
-                    @foreach (var item in ViewBag.Conditions)
-                    {
-                        if (item.Id == 3)
-                        {
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="@item.Id" name="VehicleConditionId" hidden checked>
-                            </div>
-                        }
-                        else
-                        {
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="@item.Id" name="VehicleConditionId">
-                                <label class="form-check-label">
-                                    @item.Name
-                                </label>
-                            </div>
-                        }
-                    }
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" asp-for="isCredit">
+                        <label class="form-check-label" asp-for="isCredit">
+                            <p style="width: 25rem;" class="text-secondary">
+                                Kreditdədir
+                            </p>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" asp-for="isBarter">
+                        <label class="form-check-label" asp-for="isBarter">
+                            <p style="width: 25rem;" class="text-secondary">
+                                Barter mümkündür
+                            </p>
+                        </label>
+                    </div>
                 </div>
-                <span asp-validation-for="VehicleConditionId" class="text text-danger"></span>
             </div>
 
             <div class="sixth-group d-flex mt-4">
@@ -376,8 +373,11 @@
                 <div class="d-flex justify-content-between mt-3" style="width: 30rem;">
                     <label class="">Nömrəniz</label>
                     <div>
-                        <input type="number" class="form-control form-control-sm" style="width: 20rem;" asp-for="PhoneNumber">
-                        <span asp-validation-for="PhoneNumber" class="text text-danger"></span>
+                        <div class="d-flex">
+                            <span class="mt-2 me-2">+994 </span>
+                            <input type="tel" class="form-control" placeholder="50 515 15 15" asp-for="TelephoneNumber" id="phone" pattern="[0-9 ]+" style="width: 17rem;">
+                        </div>
+                        <span asp-validation-for="TelephoneNumber" class="text text-danger"></span>
                     </div>
                 </div>
 

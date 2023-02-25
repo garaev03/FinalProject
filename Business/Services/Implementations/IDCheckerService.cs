@@ -71,11 +71,6 @@ namespace Business.Services.Implementations
             await _service._seatService.GetByIdAsync(id);
         }
 
-        public async Task CheckVehicleConditionId(int id)
-        {
-            await _service._conditionService.GetByIdAsync(id);
-        }
-
         public async Task CheckVehicleImageId(int id)
         {
             //

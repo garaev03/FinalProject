@@ -1,13 +1,9 @@
-﻿using Entities.DTOs.EngineCapacityDtos;
-
-namespace Business.Services.Interfaces
+﻿namespace Business.Services.Interfaces;
+public interface IEngineCapacityService
 {
-    public interface IEngineCapacityService
-    {
-        Task<List<EngineCapacityGetDto>> GetAllAsync();
-        Task<EngineCapacityGetDto> GetByIdAsync(int id);
-        Task CreateAsync(EngineCapacityPostDto postDto);
-        Task UpdateAsync(EngineCapacityUpdateDto updateDto);
-        Task DeleteAsync(int id);
-    }
+    Task<List<EngineCapacityGetDto>> GetAllAsync();
+    Task<EngineCapacityGetDto> GetByIdAsync(int id);
+    Task CreateAsync(EngineCapacityPostDto postDto);
+    Task UpdateAsync(EngineCapacityUpdateDto updateDto);
+    Task DeleteAsync(int id);
 }

@@ -1,0 +1,41 @@
+﻿@model List<VehicleGetDto>
+@{
+    ViewData["Title"] = "İmtina olunmuşlar";
+}
+<div>
+    <partial name="../Shared/_SearchPartialView.cshtml"></partial>
+
+@foreach (var item in Model)
+{
+
+    <div class="card border">
+        <div class="card-header d-flex justify-content-between ps-3 drop-car ">
+            <div class="d-flex">
+                <p class="vehicle-makes-models">@item.Model.Make.Name @item.Model.Name</p>
+                <p class="vehicle-ids"><b>#@item.Id</b></p>
+            </div>
+            <a class="me-4  btn">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </div>
+        <div class="vehicle-body" style="display: none;">
+            <partial name="../Shared/_VehicleTablePartialView.cshtml" model="item"></partial>
+                  <div class="ms-3 me-3 mb-3">
+                <div class="form-outline">
+                    <label class="form-label" for="textAreaExample">Məlumat</label>
+                    <p class="form-control">@item.Description</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end me-3 mb-3">
+                <div class="text-center me-3">
+                    <a asp-action="Await" asp-route-id="@item.Id" class="btn btn-primary text-light">Gözləməyə sal</a>
+                </div>
+                <div class="text-center">
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger text-light">Sil</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+}
+</div>

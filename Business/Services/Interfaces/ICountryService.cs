@@ -1,13 +1,9 @@
-﻿using Entities.DTOs.CountryDtos;
-
-namespace Business.Services.Interfaces
+﻿namespace Business.Services.Interfaces;
+public interface ICountryService
 {
-    public interface ICountryService
-    {
-        Task<List<CountryGetDto>> GetAllAsync();
-        Task<CountryGetDto> GetByIdAsync(int id);
-        Task CreateAsync(CountryPostDto postDto);
-        Task UpdateAsync(CountryUpdateDto updateDto);
-        Task DeleteAsync(int id);
-    }
+    Task<List<CountryGetDto>> GetAllAsync();
+    Task<CountryGetDto> GetByIdAsync(int id);
+    Task CreateAsync(CountryPostDto postDto);
+    Task UpdateAsync(CountryUpdateDto updateDto);
+    Task DeleteAsync(int id);
 }

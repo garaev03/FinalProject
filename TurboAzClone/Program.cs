@@ -47,12 +47,8 @@ builder.Services.AddScoped<ISeatRepository, SeatRepository>();
 builder.Services.AddScoped<ISeatService, SeatService>();
 builder.Services.AddScoped<IOwnerCountRepository, OwnerCountRepository>();
 builder.Services.AddScoped<IOwnerCountService, OwnerCountService>();
-builder.Services.AddScoped<IStatusRepository, StatusRepository>();
-builder.Services.AddScoped<IStatusService, StatusService>();
 builder.Services.AddScoped<IVehicleSupplyRepository, VehicleSupplyRepository>();
 builder.Services.AddScoped<IVehicleSupplyService, VehicleSupplyService>();
-builder.Services.AddScoped<IVehicleConditionRepository, VehicleConditionRepository>();
-builder.Services.AddScoped<IVehicleConditionService, VehicleConditionService>();
 builder.Services.AddScoped<IYearRepository, YearRepository>();
 builder.Services.AddScoped<IYearService, YearService>();
 builder.Services.AddScoped<IModelRepository, ModelRepository>();
@@ -61,6 +57,7 @@ builder.Services.AddScoped<ICityRepository, CityRepository>();
 builder.Services.AddScoped<ICityService, CityService>();
 builder.Services.AddScoped<IVehicleRepository, VehicleRepository>();
 builder.Services.AddScoped<IVehicleService, VehicleService>();
+builder.Services.AddScoped<IPhoneNumberRepository, PhoneNumberRepository>();
 builder.Services.AddScoped<IIDCheckerService, IDCheckerService>();
 builder.Services.AddScoped<AllServices, AllServices>();
 
@@ -75,7 +72,6 @@ builder.Services.AddFluentValidation(opt =>
 builder.Services.AddIdentity<AppUser, IdentityRole>()
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<AppDbContext>();
-builder.Services.AddRazorPages();
 builder.Services.AddControllers().AddJsonOptions(x =>
                 x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 builder.Services.AddSignalR();
@@ -83,11 +79,11 @@ builder.Services.AddSignalR();
 builder.Services.Configure<IdentityOptions>(options =>
 {
     // Password settings.
-    options.Password.RequireDigit = true;
-    options.Password.RequireLowercase = true;
+    options.Password.RequireDigit = false;
+    options.Password.RequireLowercase = false;
     options.Password.RequireNonAlphanumeric = false;
-    options.Password.RequireUppercase = true;
-    options.Password.RequiredLength = 6;
+    options.Password.RequireUppercase = false;
+    options.Password.RequiredLength = 5;
     options.Password.RequiredUniqueChars = 0;
 
     // Lockout settings.
@@ -98,7 +94,7 @@ builder.Services.Configure<IdentityOptions>(options =>
     // User settings.
     options.User.AllowedUserNameCharacters =
     "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
-    options.User.RequireUniqueEmail = false;
+    options.User.RequireUniqueEmail = true;
 });
 var app = builder.Build();
 

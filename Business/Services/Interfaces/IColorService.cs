@@ -1,7 +1,4 @@
-﻿using Entities.DTOs.ColorDtos;
-
-namespace Business.Services.Interfaces;
-
+﻿namespace Business.Services.Interfaces;
 public interface IColorService
 {
     Task<List<ColorGetDto>> GetAllAsync();

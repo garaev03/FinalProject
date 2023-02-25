@@ -9,25 +9,31 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="~/assets/style.css">
+    <link rel="stylesheet" href="~/assets/image-fullscreen.css">
+    <link rel="stylesheet" href="~/assets/image-slider.css">
+    <link rel="stylesheet" href="~/assets/splide.min.css">
+    <link rel="stylesheet" href="~/assets/login.css">
+
+    <style>
+
+    </style>
 </head>
 
 <body>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img id="modal-img" class="modal-content"
+             src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQS2ol73JZj6-IqypxPZXYS3rRiPwKteoD8vezk9QsRdkjt3jEn&usqp=CAU">
+    </div>
     <div class="top-header mt-3">
 
         <div class="support-section container">
             <div class="d-flex justify-content-between">
                 <div class="other-websites">
-                    <a class="ms-2">Tap.az</a>
-                    <a class="ms-2">Bina.az</a>
-                    <a class="ms-2">Boss.az</a>
+                    <span>Dəstək:</span>
+                    <a>012 537 11 37</a>
                 </div>
                 <div class="others d-flex">
-                    <div class="call-support me-4">
-                        <span>Dəstək:</span>
-                        <a>012 537 11 37</a>
-                        <span class="ms-1 me-1">,</span>
-                        <a>012 537 11 37</a>
-                    </div>
                     <a class="help me-4">
                         Yardım
                     </a>
@@ -38,10 +44,26 @@
                         <i class="fa-solid fa-heart"></i>
                         Seçilmişlər
                     </a>
-                    <a class="account me-4">
-                        <i class="fa-solid fa-circle-user"></i>
-                        Giriş
-                    </a>
+
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <button class="dropdown-toggle border-0 text-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-circle-user"></i>
+                            Hesab
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" asp-controller="account" asp-action="confirmeds">Mənim Elanlarım</a></li>
+                            <li><a class="dropdown-item" asp-controller="account" asp-action="edit">Profil</a></li>
+                            <li><a class="dropdown-item" asp-controller="account" asp-action="logout">Çıxış et</a></li>
+                        </ul>
+                    }
+                    else
+                    {
+                        <a asp-controller="account" asp-action="login" class="account me-4">
+                            <i class="fa-solid fa-circle-user"></i>
+                            Giriş
+                        </a>
+                    }
                 </div>
             </div>
 
@@ -49,7 +71,7 @@
 
         <div class="header mt-3">
             <nav class="navbar navbar-expand-lg navbar-light bg-danger">
-                <a class="navbar-brand me-5" href="#">
+                <a class="navbar-brand me-5" asp-controller="home" asp-action="index">
                     <img width="150"
                          src="https://turbo.azstatic.com/assets/logo-67bbb214ce91649f92ed6036eba7e52c29f3e56614a8d1404283b4c23c5878d6.svg"
                          alt="turbo.az">
@@ -63,9 +85,9 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Bütün elanlar</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Avtosalonlar</a>
-                        </li>
+                        @* <li class="nav-item">
+                        <a class="nav-link" href="#">Avtosalonlar</a>
+                        </li>*@
                     </ul>
                 </div>
                 <div class="new-anonc">
@@ -76,8 +98,7 @@
 
     </div>
 
-    <div class="content m-3">
-
+    <div class="content mb-3 ms-3 me-3">
         @RenderBody()
     </div>
 
@@ -139,9 +160,25 @@
             </div>
         </div>
     </div>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
           integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
           crossorigin="anonymous" referrerpolicy="no-referrer" />
-          <script src="~/assets/js/yeni-elan.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="~/assets/js/yeni-elan.js"></script>
+    <script src="~/assets/js/splide.min.js"></script>
+    <script src="~/assets/js/image-fullscreen.js"></script>
+    <script src="~/assets/js/image-slider.js"></script>
+    <script>
+        document.getElementById("phone").addEventListener("keydown", function (e) {
+            const txt = this.value;
+            // prevent more than 12 characters, ignore the spacebar, allow the backspace
+            if ((txt.length == 12 || e.which == 32) & e.which !== 8) e.preventDefault();
+            // add spaces after 3 & 7 characters, allow the backspace
+            if ((txt.length == 2 || txt.length == 6 || txt.length == 9) && e.which !== 8)
+                this.value = this.value + " ";
+        });
+    </script>
+
 </body>
 </html>

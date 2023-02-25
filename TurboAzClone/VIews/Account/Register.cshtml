@@ -1,0 +1,45 @@
+﻿@model RegisterDto
+@{
+    ViewData["Title"] = "Yeni Hesab";
+}
+
+<div class="login-section">
+    <div class="login-box text-center border p-5 shadow" style="width: 50rem">
+        <h4 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Yeni Hesab</h4>
+        <div>
+            <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+            <form method="post">
+                <div class="form-group mt-3 text-start">
+                    <label asp-for="Name">Ad</label>
+                    <input type="text" class="form-control" asp-for="Name">
+                    <span asp-validation-for="Name" class="text text-danger"></span>
+                </div>
+                <div class="form-group mt-3 text-start">
+                    <label asp-for="PhoneNumber">Nömrə</label>
+                    <div class="d-flex" >
+                        <span class="mt-2 me-2">+994 </span>
+                        <input type="tel" class="form-control" placeholder="50 515 15 15" asp-for="PhoneNumber" id="phone" pattern="[0-9 ]+">
+                    </div>
+                    <span asp-validation-for="PhoneNumber" class="text text-danger"></span>
+                </div>
+                <div class="form-group mt-3 text-start">
+                    <label asp-for="Email">Email</label>
+                    <input type="email" class="form-control" asp-for="Email">
+                    <span asp-validation-for="Email" class="text text-danger"></span>
+                </div>
+                <div class="form-group mt-3 text-start">
+                    <label asp-for="Password">Parol</label>
+                    <input type="password" class="form-control" asp-for="Password">
+                    <span asp-validation-for="Password" class="text text-danger"></span>
+                </div>
+                <div class="text-start mt-3">
+                    <span>Hesabın var?</span><a asp-action="login" class="ms-2" style="text-decoration:none">Giriş et</a>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">Qeydiyyatdan keç</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+

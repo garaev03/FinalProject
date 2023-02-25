@@ -59,6 +59,10 @@
             "FluentValidation.AspNetCore": {
               "target": "Package",
               "version": "[11.2.2, )"
+            },
+            "Twilio.AspNet.Core": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [

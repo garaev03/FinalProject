@@ -1,0 +1,92 @@
+﻿@model VehicleGetDto
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="">
+    <div class="card mb-3">
+        <div class="d-flex justify-content-center">
+            <img style="width:50rem" class="card-img-top" src="~/assets/images/vehicle-images/6de99943-b7ff-4a5d-990e-0e25d6f2a0fb-wp6114896.png" alt="Card image cap">
+        </div>
+        <div>
+            <h5 class="card-title"><b>Marka</b> Model #Id</h5>
+            <div class="d-flex">
+                <table class="table table-striped table-hover mt-2">
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">Ban növü</th>
+                            <td style="width: 20rem;text-align: center;">Otto</td>
+                            <th scope="row">Yanacaq növü</th>
+                            <td style="width: 20rem;text-align: center;">Larry</td>
+                            <th scope="row">VİN</th>
+                            <td style="width: 20rem;text-align: center;">Larry</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Mühərrik həcmi</th>
+                            <td style="width: 20rem;text-align: center;">Larry</td>
+                            <th scope="row">İl</th>
+                            <td style="width: 20rem;text-align: center;">Larry</td>
+                            <th scope="row">Email</th>
+                            <td style="width: 20rem;text-align: center;">Larry</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Mühərrik gücü</th>
+                            <td style="width: 20rem;text-align: center;">Otto</td>
+                            <th scope="row">Rəng</th>
+                            <td style="width: 20rem;text-align: center;">Larry</td>
+                            <th scope="row">Sahibin adı</th>
+                            <td style="width: 20rem;text-align: center;">Larry</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Ötürücü</th>
+                            <td style="width: 20rem;text-align: center;">Otto</td>
+                            <th scope="row">Ölkə </th>
+                            <td style="width: 20rem;text-align: center;">Larry</td>
+                            <th scope="row">Sahibin nömrəsi</th>
+                            <td style="width: 20rem;text-align: center;">Larry</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sürət qutusu</th>
+                            <td style="width: 20rem;text-align: center;">Otto</td>
+                            <th scope="row">Şəhər</th>
+                            <td style="width: 20rem;text-align: center;">Larry</td>
+                            <th scope="row">Sahib sayı</th>
+                            <td style="width: 20rem;text-align: center;">Larry məzənnə</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Odometr</th>
+                            <td style="width: 20rem;text-align: center;">Otto</td>
+                            <th scope="row">Oturacaq sayı</th>
+                            <td style="width: 20rem;text-align: center;">Larry</td>
+                            <th scope="row">Qiyməti</th>
+                            <td style="width: 20rem;text-align: center;">Larry məzənnə</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Kreditdədir</th>
+                            <td style="width: 20rem;text-align: center;">Larry məzənnə</td>
+                            <th scope="row">Barter mümkündür</th>
+                            <td style="width: 20rem;text-align: center;">Larry məzənnə</td>
+                            <th scope="row">Vəziyyəti</th>
+                            <td style="width: 20rem;text-align: center;">Yoxdur</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Təchizatları</th>
+                            <td colspan="5" style="width: 20rem;text-align: center;">Yoxdur</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="form-outline">
+                <label class="form-label" for="textAreaExample">Məlumat</label>
+                <textarea class="form-control" id="textAreaExample1" rows="4"></textarea>
+            </div>
+            <div class="d-flex justify-content-end mt-3">
+                <a class="btn btn-warning me-3">Yadda saxla</a>
+                <a asp-contoller="vehicles" asp-action="news" class="btn btn-danger me-3 text-light">Imtina et</a>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,30 @@
+﻿@model LoginDto
+@{
+    ViewData["Title"] = "Giriş";
+}
+
+<div class="login-section">
+    <div class="login-box text-center border p-5 shadow" style="width: 50rem">
+        <h4 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Kabinetə giriş</h4>
+        <div>
+            <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+            <form method="post">
+                <div class="form-group mt-3 text-start">
+                    <label asp-for="Email">Email</label>
+                    <input class="form-control" asp-for="Email" type="email">
+                    <span asp-validation-for="Email" class="text text-danger"></span>
+                </div>
+                <div class="form-group mt-3  text-start ">
+                    <label asp-for="Password">Parol</label>
+                    <input type="password" class="form-control" asp-for="Password">
+                    <span asp-validation-for="Password" class="text text-danger"></span>
+                </div>
+                <div class="text-start mt-3">
+                    <span>Hesabın yoxdur?</span><a asp-action="register" class="ms-2" style="text-decoration:none">Qeydiyyatdan keç</a>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">Daxil ol</button>
+            </form>
+        </div>
+    </div>
+</div>
+
