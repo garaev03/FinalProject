@@ -531,7 +531,3 @@ C:\Users\samir\OneDrive\Desktop\Final\TurboAzClone\bin\Debug\net6.0\FluentValida
 C:\Users\samir\OneDrive\Desktop\Final\TurboAzClone\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\samir\OneDrive\Desktop\Final\TurboAzClone\obj\Debug\net6.0\TurboAzClone.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\samir\OneDrive\Desktop\Final\TurboAzClone\bin\Debug\net6.0\libman.json
-C:\Users\samir\OneDrive\Desktop\Final\TurboAzClone\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
-C:\Users\samir\OneDrive\Desktop\Final\TurboAzClone\bin\Debug\net6.0\Twilio.dll
-C:\Users\samir\OneDrive\Desktop\Final\TurboAzClone\bin\Debug\net6.0\Twilio.AspNet.Common.dll
-C:\Users\samir\OneDrive\Desktop\Final\TurboAzClone\bin\Debug\net6.0\Twilio.AspNet.Core.dll

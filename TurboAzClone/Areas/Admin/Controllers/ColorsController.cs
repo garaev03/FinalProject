@@ -1,12 +1,7 @@
-﻿using Business.Services.Interfaces;
-using Business.Utilities.Exceptions;
-using Business.Utilities.Validations.ColorValidations;
-using Entities.DTOs.ColorDtos;
-using Microsoft.AspNetCore.Mvc;
-
-namespace TurboAzClone.Areas.Admin.Controllers
+﻿namespace TurboAzClone.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles ="Admin,SuperAdmin")]
     public class ColorsController : Controller
     {
         private readonly IColorService _service;

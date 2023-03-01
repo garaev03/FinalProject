@@ -28,13 +28,11 @@
         public bool isBarter { get; set; }
         public List<int> SupplyIds { get; set; }
         public List<int> ReportIds { get; set; }
-        public List<int> ImageIds { get; set; }
         public List<IFormFile> formFiles { get; set; }
         public VehiclePostDto()
         {
             ReportIds = new();
             SupplyIds = new();
-            ImageIds = new();
             formFiles = new();
         }
     }

@@ -1,0 +1,22 @@
+﻿@model AutoSearchVM
+@{
+    ViewData["Title"] = "Axtarış Nəticələri";
+}
+
+@await Component.InvokeAsync("Search",Model.searchIds)
+
+@if (Model.vehicles.Count is 0)
+{
+    <div class="d-flex justify-content-center mt-5 text-center">
+        <div style="height: 15rem">
+            <img style="width:100%; height:100%" src="~/assets/images/6134065.png" />
+        </div>
+        <div class="d-flex align-items-center ms-5">
+            <span style="font-size:30px;font-family:'Comic Sans MS'">Nəticə tapılmadı!</span>
+        </div>
+    </div>
+}
+else
+{
+    @await Component.InvokeAsync("Vehicle",Model.vehicles)
+}

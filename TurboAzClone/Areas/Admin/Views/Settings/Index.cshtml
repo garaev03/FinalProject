@@ -1,0 +1,60 @@
+﻿@model SettingGetDto
+@{
+    ViewData["Title"] = "Tənzimləmələr";
+}
+
+<p>
+    <a asp-action="update" class="btn btn-warning text-light">Yenilə</a>
+</p>
+<table class="table" style="vertical-align:middle">
+    <thead>
+        <tr>
+            <th>
+                Loqo
+            </th>
+            <th class=text-center>
+                Dəstək nömrəsi
+            </th>
+            <th class=text-center>
+                Email
+            </th>
+            <th>
+                Facebook Linki
+            </th>
+            <th>
+                Instagram Linki
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td width="150">
+                <div class="bg-danger rounded">
+                    <img style="height:50px" width="100%" src="~/assets/images/logos/@Model.Logo" class="p-1" />
+                </div>
+            </td>
+            <td class=text-center>
+                @Model.TelephoneNumber
+            </td>
+            <td class=text-center>
+                @Model.Email
+            </td>
+            <td>
+                @Model.FacebookLink
+            </td>
+            <td>
+                @Model.InstagramLink
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                @Model.FooterLeft
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                @Model.FooterRight
+            </td>
+        </tr>
+    </tbody>
+</table>

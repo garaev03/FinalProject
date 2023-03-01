@@ -1,12 +1,7 @@
-﻿using Business.Services.Interfaces;
-using Business.Utilities.Exceptions;
-using Business.Utilities.Validations.GearBoxValidations;
-using Entities.DTOs.GearBoxDtos;
-using Microsoft.AspNetCore.Mvc;
-
-namespace TurboAzClone.Areas.Admin.Controllers
+﻿namespace TurboAzClone.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles ="Admin,SuperAdmin")]
     public class GearBoxesController : Controller
     {
         private readonly IGearBoxService _service;

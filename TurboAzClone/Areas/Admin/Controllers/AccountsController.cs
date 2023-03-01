@@ -1,11 +1,7 @@
-﻿using Core.Entities.Concrets;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-
-namespace TurboAzClone.Areas.Admin.Controllers
+﻿namespace TurboAzClone.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles ="SuperAdmin")]
     public class AccountsController : Controller
     {
         private readonly UserManager<AppUser> _userManager;

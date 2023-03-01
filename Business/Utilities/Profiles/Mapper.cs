@@ -1,8 +1,11 @@
 ﻿namespace Business.Utilities.Profiles;
-public class Mapper:Profile
+public class Mapper : Profile
 {
     public Mapper()
     {
+        CreateMap<Setting, SettingGetDto>();
+        CreateMap<Setting, SettingUpdateDto>();
+
         CreateMap<Ban, BanGetDto>();
         CreateMap<BanPostDto, Ban>();
 
@@ -56,5 +59,6 @@ public class Mapper:Profile
 
         CreateMap<Vehicle, VehicleGetDto>();
         CreateMap<VehiclePostDto, Vehicle>();
+        CreateMap<VehicleUpdateDto, Vehicle>();
     }
 }

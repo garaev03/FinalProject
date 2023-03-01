@@ -2,6 +2,7 @@
 public class RegisterValidator : AbstractValidator<RegisterDto>
 {
     private readonly NumberValidation _numberValidation = new();
+    private readonly EmailValidation _emailValidation = new();
     public RegisterValidator()
     {
         RuleFor(x => x.Name)
@@ -11,7 +12,8 @@ public class RegisterValidator : AbstractValidator<RegisterDto>
         RuleFor(x => x.Email)
             .NotEmpty().WithMessage("Email boş ola bilməz.")
             .NotNull().WithMessage("Email boş ola bilməz.")
-            .EmailAddress().WithMessage("Email düzgün deyil.");
+            .EmailAddress().WithMessage("Email düzgün deyil.")
+            .Must(_emailValidation.isEmail).WithMessage("Email düzgün deyil.");
         RuleFor(x => x.PhoneNumber)
             .NotEmpty().WithMessage("Nömrə boş ola bilməz.")
             .NotNull().WithMessage("Nömrə boş ola bilməz.")

@@ -10,7 +10,6 @@
         public int YearId { get; set; }
         public int ColorId { get; set; }
         public int EngineCapacityId { get; set; }
-        public int EngineCapacityConverted { get; set; }
         public int DriveTrainId { get; set; }
         public int CurrencyId { get; set; }
         public int OwnerId { get; set; }

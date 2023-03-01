@@ -7,9 +7,20 @@
 <div class="pt-3 pb-3" style="background-color:#F1F3F7">
     <h4 class="ms-4">@Model.Model.Make.Name @Model.Model.Name</h4>
 </div>
-
+<div>
+    @if (Model.isExpired)
+    {
+        <div class="alert alert-info">Bu elanın müddəti başa çatıb</div>
+    }else if (Model.inAwait || Model.isEdited)
+    {
+        <div class="alert alert-warning">Bu elan yoxlamadadır.</div>
+    }else if (Model.isCancelled)
+    {
+        <div class="alert alert-danger">Bu elan imtina olunub.</div>
+    }
+</div>
 <div class="row">
-    <div class="col-7 mt-3">
+    <div class="col-8 mt-3">
         <div id="main-slider" class="splide">
             <div class="splide__track">
                 <ul class="splide__list">
@@ -33,7 +44,7 @@
         </ul>
 
     </div>
-    <div class="col-5 mt-3">
+    <div class="col-4 mt-3">
         <div class="product-sidebar js-sticky-sidebar  shadow p-3 pb-4" style="background-color:#F1F3F7">
             <div class="product-sidebar__box">
                 <div class="product-price">
@@ -208,10 +219,10 @@
     </div>
 </div>
 
-<div class="mt-4 d-flex justify-content-between">
+<div class="mt-4 d-flex justify-content-between"> 
     <div>
-        <a class="text-warning" style="text-decoration:none">Düzəliş et</a>
-        <a class="ms-5 text-danger" style="text-decoration:none">Elanı sil</a>
+        <a class="edit text-warning" style="text-decoration:none" data-id="@Model.Id">Düzəliş et</a>
+        <a class="delete ms-5 text-danger" style="text-decoration:none" data-id="@Model.Id">Elanı sil</a>
     </div>
     <div>
         Elanın nömrəsi : <span>@Model.Id</span>

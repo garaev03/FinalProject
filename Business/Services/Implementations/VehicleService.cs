@@ -1,4 +1,6 @@
-﻿namespace Business.Services.Implementations;
+﻿using Entities.Concrets;
+
+namespace Business.Services.Implementations;
 public class VehicleService : IVehicleService
 {
     private readonly string[] includes =
@@ -41,7 +43,7 @@ public class VehicleService : IVehicleService
         else
             return _mapper.Map<List<VehicleGetDto>>(await _repository.GetAllAsync(exp));
     }
-    public async Task<VehicleGetDto> GetByIdAsync(int id, bool include)
+    public async Task<VehicleGetDto> GetByIdAsync(int id, bool include = false)
     {
         await CheckAllDates();
         VehicleGetDto? Vehicle = new();
@@ -59,18 +61,17 @@ public class VehicleService : IVehicleService
         if (vehicle.PINCode != PINCode)
             throw new WrongPINCodeException(Messages.WrongPINCode);
     }
-    public async Task CreateAsync(VehiclePostDto postDto)
+    public async Task<string> CreateAsync(VehiclePostDto postDto)
     {
-        await CheckAllIds(postDto);
+        await CheckAllIds(postDto.BanId, postDto.FuelId, postDto.DriveTrainId, postDto.GearBoxId, postDto.YearId, postDto.MileageTypeId, postDto.ColorId, postDto.EngineCapacityId, postDto.SeatId);
+        await CheckModelAndOwner(postDto.ModelId, postDto.OwnerId);
         PhoneNumber number = await GetNumber(postDto.TelephoneNumber);
         Vehicle newVehicle = _mapper.Map<Vehicle>(postDto);
-        if (postDto.formFiles.Count < 3)
-            throw new ImageException(Messages.MinImage3);
 
         Random generator = new Random();
         string PINCode = generator.Next(0, 1000000).ToString("D6");
 
-        newVehicle.PINCode= PINCode;
+        newVehicle.PINCode = PINCode;
         number.forOnce = false;
         newVehicle.Images = await CreateImageAsync(postDto.formFiles, true);
         newVehicle.Supplies = await GetSupplies(postDto.SupplyIds);
@@ -79,6 +80,7 @@ public class VehicleService : IVehicleService
         newVehicle.inAwait = true;
         await _repository.CreateAsync(newVehicle);
         await _repository.SaveChangesAsync();
+        return PINCode;
     }
     public async Task DeleteAsync(int id)
     {
@@ -95,13 +97,34 @@ public class VehicleService : IVehicleService
     }
     public async Task UpdateAsync(VehicleUpdateDto updateDto)
     {
-        await CheckAllIds(updateDto.postDto);
+        await CheckAllIds(updateDto.BanId, updateDto.FuelId, updateDto.DriveTrainId, updateDto.GearBoxId, updateDto.YearId, updateDto.MileageTypeId, updateDto.ColorId, updateDto.EngineCapacityId, updateDto.SeatId);
         Vehicle? Vehicle = await _repository.GetByIdAsync(updateDto.getDto.Id);
         if (Vehicle is null)
             throw new NotFoundException(Messages.NotFoundVehicle);
-        Vehicle = _mapper.Map<Vehicle>(updateDto.postDto);
-        if (updateDto.postDto.formFiles.Count is not 0)
-            Vehicle.Images = await CreateImageAsync(updateDto.postDto.formFiles);
+        List<VehicleImage> newImages = new();
+        if (updateDto.formFiles.Count is not 0)
+            newImages = await CreateImageAsync(updateDto.formFiles);
+        Vehicle.Images = UpdateImages(Vehicle.Images, updateDto.ImageIds, updateDto.MainImageId);
+        Vehicle.Images.AddRange(newImages);
+        Vehicle.Milage = updateDto.Milage;
+        Vehicle.BanId = updateDto.BanId;
+        Vehicle.CityId = updateDto.CityId;
+        Vehicle.MileageTypeId = updateDto.MileageTypeId;
+        Vehicle.YearId = updateDto.YearId;
+        Vehicle.SeatId = updateDto.SeatId;
+        Vehicle.Price = updateDto.Price;
+        Vehicle.ColorId = updateDto.ColorId;
+        Vehicle.GearBoxId = updateDto.GearBoxId;
+        Vehicle.FuelId = updateDto.FuelId;
+        Vehicle.CountryId = updateDto.CountryId;
+        Vehicle.EnginePower = updateDto.EnginePower;
+        Vehicle.EngineCapacityId = updateDto.EngineCapacityId;
+        Vehicle.CurrencyId = updateDto.CurrencyId;
+        Vehicle.DriveTrainId = updateDto.DriveTrainId;
+        Vehicle.isCredit = updateDto.isCredit;
+        Vehicle.Supplies = await GetSupplies(updateDto.SupplyIds);
+        Vehicle.Reports = await GetReports(updateDto.ReportIds);
+        Vehicle.isBarter = updateDto.isBarter;
         Vehicle.isEdited = true;
         Vehicle.isConfirmed = false;
         await _repository.SaveChangesAsync();
@@ -175,7 +198,7 @@ public class VehicleService : IVehicleService
         {
             VehicleReport? report = await _reportRepository.GetByIdAsync(id);
             if (report is null)
-                throw new NotFoundException("Nəqliyyat vəziyyəti tapılmadı.");
+                throw new NotFoundException(Messages.NotFoundVehicleReport);
             reports.Add(report);
         }
         return reports;
@@ -187,7 +210,7 @@ public class VehicleService : IVehicleService
         {
             VehicleSupply? supply = await _supplyRepository.GetByIdAsync(id);
             if (supply is null)
-                throw new NotFoundException("Nəqliyyat təchizatı tapılmadı.");
+                throw new NotFoundException(Messages.NotFoundVehicleSupply);
             supplies.Add(supply);
         }
         return supplies;
@@ -200,23 +223,26 @@ public class VehicleService : IVehicleService
         else
         {
             if (number.Vehicles.Count >= 1 && !number.forOnce && !number.isMonthly)
-                throw new LimitExceededException("Ay ərzində yalnız bir maşın dərc edə bilərsiniz.");
+                throw new LimitExceededException(Messages.LimitExceeded);
         }
         return number;
     }
-    private async Task CheckAllIds(VehiclePostDto postDto)
+    private async Task CheckAllIds(int BanId, int FuelId, int DriveTrainId, int GearBoxId, int YearId, int MileageTypeId, int ColorId, int EngineCapacityId, int SeatId)
     {
-        await _idCheckerService.CheckBanId(postDto.BanId);
-        await _idCheckerService.CheckModelId(postDto.ModelId);
-        await _idCheckerService.CheckOwnerCountId(postDto.OwnerId);
-        await _idCheckerService.CheckFuelId(postDto.FuelId);
-        await _idCheckerService.CheckDriveTrainId(postDto.DriveTrainId);
-        await _idCheckerService.CheckGearBoxId(postDto.GearBoxId);
-        await _idCheckerService.CheckMileageTypeId(postDto.MileageTypeId);
-        await _idCheckerService.CheckYearId(postDto.YearId);
-        await _idCheckerService.CheckColorId(postDto.ColorId);
-        await _idCheckerService.CheckEngineCapacityId(postDto.EngineCapacityId);
-        await _idCheckerService.CheckSeatId(postDto.SeatId);
+        await _idCheckerService.CheckBanId(BanId);
+        await _idCheckerService.CheckFuelId(FuelId);
+        await _idCheckerService.CheckDriveTrainId(DriveTrainId);
+        await _idCheckerService.CheckGearBoxId(GearBoxId);
+        await _idCheckerService.CheckMileageTypeId(MileageTypeId);
+        await _idCheckerService.CheckYearId(YearId);
+        await _idCheckerService.CheckColorId(ColorId);
+        await _idCheckerService.CheckEngineCapacityId(EngineCapacityId);
+        await _idCheckerService.CheckSeatId(SeatId);
+    }
+    private async Task CheckModelAndOwner(int ModelId, int OwnerId)
+    {
+        await _idCheckerService.CheckModelId(ModelId);
+        await _idCheckerService.CheckOwnerCountId(OwnerId);
     }
     private async Task CheckAllDates()
     {
@@ -229,11 +255,28 @@ public class VehicleService : IVehicleService
             };
         }
         var numbers = await _numberRepository.GetAllAsync(x => x.isMonthly);
-        foreach (var number in numbers)
-        {
-            if (number.MonthlyExpireDate >= DateTime.Now)
-                number.isMonthly = false;
-        }
+        //foreach (var number in numbers)
+        //{
+        //    if (number.MonthlyExpireDate >= DateTime.Now)
+        //        number.isMonthly = false;
+        //}
         await _repository.SaveChangesAsync();
+    }
+    private List<VehicleImage> UpdateImages(List<VehicleImage> VehicleImages, List<int> ImageIds, int MainImageId)
+    {
+        var images = VehicleImages.ExceptBy(ImageIds.Select(x => x), x => x.Id).ToList();
+        foreach (var item in images)
+        {
+            item.isDeleted = true;
+        }
+        foreach (var item in VehicleImages.IntersectBy(ImageIds.Select(x => x), x => x.Id).ToList())
+        {
+            if (item.Id == MainImageId)
+                item.isMain = true;
+            else
+                item.isMain = false;
+            images.Add(item);
+        }
+        return images;
     }
 }

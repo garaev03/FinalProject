@@ -21,7 +21,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Business\Business.csproj" />
-    <ProjectReference Include="..\DAL\DAL.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,7 +30,9 @@
     <Folder Include="wwwroot\assets\images\ban-images\" />
     <Folder Include="wwwroot\assets\images\country-images\" />
     <Folder Include="wwwroot\assets\images\make-images\" />
+    <Folder Include="wwwroot\assets\images\logos\" />
     <Folder Include="wwwroot\assets\images\vehicle-images\" />
+    <Folder Include="wwwroot\assets\emailtemplate\" />
   </ItemGroup>
 
 </Project>

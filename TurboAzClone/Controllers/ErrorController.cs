@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
-namespace TurboAzClone.Controllers
+﻿namespace TurboAzClone.Controllers
 {
     public class ErrorController : Controller
     {

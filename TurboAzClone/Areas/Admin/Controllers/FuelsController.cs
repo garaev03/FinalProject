@@ -1,12 +1,7 @@
-﻿using Business.Services.Interfaces;
-using Business.Utilities.Exceptions;
-using Business.Utilities.Validations.FuelValidations;
-using Entities.DTOs.FuelDtos;
-using Microsoft.AspNetCore.Mvc;
-
-namespace TurboAzClone.Areas.Admin.Controllers
+﻿namespace TurboAzClone.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles ="Admin,SuperAdmin")]
     public class FuelsController : Controller
     {
         private readonly IFuelService _service;

@@ -31,3 +31,8 @@
    .thumbnail.is-active {
        opacity: 1;
    }
+
+   .main-img img {
+       width: 100%;
+       height: 70px;
+   }

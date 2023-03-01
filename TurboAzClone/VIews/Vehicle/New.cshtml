@@ -2,12 +2,10 @@
 @{
     ViewData["Title"] = "Yeni Avtomobil";
 }
-
+<div class="pt-3 pb-3" style="background-color:#F1F3F7; font-size: 25px">
+    <span class="ms-3">Elan yerləşdir</span>
+</div>
 <div>
-    <h3>Elan yerləşdir</h3>
-    <div>
-        <i class="fa-solid fa-exclamation me-2"></i>Elanınızı saytın ön sıralarında görmək üçün "İrəli çək" xidmətindən istifadə edin.
-    </div>
     <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
     <form method="post" enctype="multipart/form-data">
         <div class="d-flex">
@@ -123,7 +121,6 @@
                         }
                     </div>
                 </div>
-
 
                 <div class="form-group d-flex justify-content-between mt-4">
                     <label class="me-4">Neçənci sahibisiniz?</label>
@@ -411,7 +408,7 @@
                 <button type="submit" class="btn btn-danger btn-lg pe-5 ps-5 ">Elanı yerləşdir</button>
             </div>
 
-            <p>Elan yerləşdirərək, siz Turbo.az-ın <a>İstifadəçi razılaşması</a> və <a>Qaydaları</a> ilə razı olduğunuzu təsdiq edirsiniz</p>
+            <p>Elan yerləşdirərək, siz Turbo.az-ın  <a asp-controller="pages" asp-action="rules" target="_blank">Qaydaları</a> ilə razı olduğunuzu təsdiq edirsiniz</p>
         </div>
 
     </form>

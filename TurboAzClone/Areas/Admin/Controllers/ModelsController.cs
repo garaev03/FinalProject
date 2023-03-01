@@ -1,12 +1,7 @@
-﻿using Business.Services.Interfaces;
-using Business.Utilities.Exceptions;
-using Business.Utilities.Validations.ModelValidations;
-using Entities.DTOs.ModelDtos;
-using Microsoft.AspNetCore.Mvc;
-
-namespace TurboAzClone.Areas.Admin.Controllers
+﻿namespace TurboAzClone.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles ="Admin,SuperAdmin")]
     public class ModelsController : Controller
     {
         private readonly IModelService _service;

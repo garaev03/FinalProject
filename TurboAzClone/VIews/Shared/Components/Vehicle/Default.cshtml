@@ -1,9 +1,9 @@
 ﻿@model List<VehicleGetDto>
 
-<div class="cards">
+<div class="cards row">
     @foreach (var item in Model)
     {
-        <a asp-controller="vehicle" asp-action="details" asp-route-id="@item.Id" style="text-decoration:none; color:black">
+        <a asp-controller="vehicle" asp-action="details" asp-route-id="@item.Id" style="text-decoration:none; color:black" class="col-3">
             <div class="car card col-3">
                 <div class="car-img">
                     <img src="/assets/images/vehicle-images/@item.Images.FirstOrDefault(x=>x.isMain).Path" style="width: 100%;height: 240px;" alt="">

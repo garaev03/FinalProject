@@ -24,7 +24,7 @@ public class Messages
     public static string NotFoundYear = "İl tapılmadı.";
 
     public static string NullImage = "Zəhmət olmasa şəkil daxil edin.";
-    public static string MinImage3 = "Zəhmət olmasa ən azı 3 şəkil daxil edin.";
 
     public static string WrongPINCode = "Daxil etdiyiniz PİN kod yanlışdır.";
+    public static string LimitExceeded = "Ay ərzində yalnız bir maşın dərc edə bilərsiniz.";
 }

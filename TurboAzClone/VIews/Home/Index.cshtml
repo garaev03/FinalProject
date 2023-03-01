@@ -1,8 +1,6 @@
 ﻿@{
-    ViewData["Title"] = "Əsas";
+    ViewData["Title"] = "Əsas Səhifə";
 }
-<div>
-    <h1>Home</h1>
-</div>
-@await Component.InvokeAsync("Vehicle")
 
+@await Component.InvokeAsync("Search",new SearchIdsVM())
+@await Component.InvokeAsync("Vehicle")

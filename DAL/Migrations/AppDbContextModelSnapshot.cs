@@ -428,6 +428,57 @@ namespace DAL.Migrations
                     b.ToTable("Seats");
                 });
 
+            modelBuilder.Entity("Entities.Concrets.Setting", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FacebookLink")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FooterLeft")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FooterRight")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("InstagramLink")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Logo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TelephoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("isDeleted")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Settings");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Email = "mail@gmail.com",
+                            FacebookLink = "facebook",
+                            FooterLeft = "footer left",
+                            FooterRight = "footer right",
+                            InstagramLink = "instagram",
+                            Logo = "icon.png",
+                            TelephoneNumber = "000000000",
+                            isDeleted = false
+                        });
+                });
+
             modelBuilder.Entity("Entities.Concrets.Vehicle", b =>
                 {
                     b.Property<int>("Id")
@@ -449,7 +500,9 @@ namespace DAL.Migrations
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("CreatedDate")
-                        .HasColumnType("datetime2");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("getdate()");
 
                     b.Property<int>("CurrencyId")
                         .HasColumnType("int");
@@ -465,9 +518,6 @@ namespace DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("EngineCapacityConverted")
-                        .HasColumnType("int");
-
                     b.Property<int>("EngineCapacityId")
                         .HasColumnType("int");
 
@@ -475,7 +525,9 @@ namespace DAL.Migrations
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("ExpiredDate")
-                        .HasColumnType("datetime2");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("dateadd(m,1,getdate())");
 
                     b.Property<int>("FuelId")
                         .HasColumnType("int");

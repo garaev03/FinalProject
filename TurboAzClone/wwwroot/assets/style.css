@@ -60,7 +60,7 @@ a:hover {
     background-color: white;
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 280px;
     height: auto;
     min-height: 250px;
     border-radius: 10px;
@@ -106,5 +106,4 @@ a:hover {
 
     .cards{
         display: flex;
-        grid-column-gap: 2rem;
     }

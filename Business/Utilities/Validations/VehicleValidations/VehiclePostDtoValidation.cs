@@ -2,12 +2,14 @@
 public class VehiclePostDtoValidation : AbstractValidator<VehiclePostDto>
 {
     private readonly NumberValidation _numberValidation = new();
+    private readonly EmailValidation _emailValidation = new();
     public VehiclePostDtoValidation()
     {
         RuleFor(x => x.Email)
              .NotEmpty().WithMessage("Email boş ola bilməz.")
              .NotNull().WithMessage("Email boş ola bilməz.")
-             .EmailAddress().WithMessage("Email düzgün deyil.");
+             .EmailAddress().WithMessage("Email düzgün deyil.")
+             .Must(_emailValidation.isEmail).WithMessage("Email düzgün deyil.");
         RuleFor(x => x.Description)
              .NotEmpty().WithMessage("Məlumat boş ola bilməz.")
              .NotNull().WithMessage("Məlumat boş ola bilməz.");
@@ -85,11 +87,15 @@ public class VehiclePostDtoValidation : AbstractValidator<VehiclePostDto>
                 .NotNull().WithMessage("Sürət qutusu seçilməlidir.")
                 .GreaterThan(0).WithMessage("Sürət qutusu seçilməlidir.");
         RuleFor(x => x.OwnerId)
-             .NotEmpty().WithMessage("Sahib seçilməlidir.")
-             .NotNull().WithMessage("Sahib seçilməlidir.")
-             .GreaterThan(0).WithMessage("Sahib seçilməlidir.");
+                .NotEmpty().WithMessage("Sahib seçilməlidir.")
+                .NotNull().WithMessage("Sahib seçilməlidir.")
+                .GreaterThan(0).WithMessage("Sahib seçilməlidir.");
         RuleFor(x => x.VIN)
                .NotEmpty().WithMessage("Vin Kod boş ola bilməz.")
                .NotNull().WithMessage("Vin Kod boş ola bilməz.");
+        RuleFor(x => x.formFiles)
+               .NotEmpty().WithMessage("Şəkil daxil edilməlidir.")
+               .NotNull().WithMessage("Şəkil daxil edilməlidir.")
+               .Must(x => x.Count >= 3).WithMessage("Zəhmət olmasa ən azı 3 şəkil daxil edin.");
     }
 }

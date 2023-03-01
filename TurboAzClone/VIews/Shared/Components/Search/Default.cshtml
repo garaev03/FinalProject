@@ -1,0 +1,275 @@
+﻿@model SearchIdsVM
+<div class="p-4 pt-3 pb-3" style="background-color:#F1F3F7; font-size: 25px">
+    <form class="form-filter">
+        <div class="d-flex">
+            <div>
+                <select class="form-control" style="width: 20rem" id="selected-make"
+                        onmousedown="if(this.options.length>8){this.size=8;}" onchange="this.size=0;" onblur="this.size=0;">
+                    <option value="0" selected>Marka</option>
+                    @foreach (var item in ViewBag.Makes)
+                    {
+                        @if (Model.makeId == item.Id)
+                        {
+                            <option value="@item.Id" selected>@item.Name</option>
+                        }
+                        else
+                        {
+                            <option value="@item.Id">@item.Name</option>
+                        }
+                    }
+                </select>
+            </div>
+            <div class="ms-3">
+                <select class="form-control" style="width: 20rem" id="models"
+                        onmousedown="if(this.options.length>10){this.size=10;}" onchange="this.size=0;" onblur="this.size=0;">
+                    <option value="0" selected>Model</option>
+                    @if (Model.makeId != 0)
+                    {
+                        @foreach (var item in ViewBag.Models)
+                        {
+                            @if (item.MakeId == Model.makeId)
+                            {
+                                @if (item.Id == Model.modelId)
+                                {
+                                    <option value="@item.Id" selected>@item.Name</option>
+                                }
+                                else
+                                {
+                                    <option value="@item.Id">@item.Name</option>
+                                }
+                            }
+                        }
+                    }
+                </select>
+            </div>
+            <div class="ms-3">
+                <select class="form-control" style="width: 20rem" id="input-ban"
+                        onmousedown="if(this.options.length>8){this.size=8;}" onchange="this.size=0;" onblur="this.size=0;">
+                    <option value="0">Ban</option>
+                    @foreach (var item in ViewBag.Bans)
+                    {
+                        @if (item.Id == Model.banId)
+                        {
+                            <option value="@item.Id" selected>@item.Name</option>
+                        }
+                        else
+                        {
+                            <option value="@item.Id">@item.Name</option>
+                        }
+                    }
+                </select>
+            </div>
+            <div class="ms-3">
+                <select class="form-control" style="width: 10rem" id="input-city"
+                        onmousedown="if(this.options.length>8){this.size=8;}" onchange="this.size=0;" onblur="this.size=0;">
+                    <option value="0">Şəhər</option>
+                    @foreach (var item in ViewBag.Cities)
+                    {
+                        @if (item.Id == Model.cityId)
+                        {
+                            <option value="@item.Id" selected>@item.Name</option>
+                        }
+                        else
+                        {
+                            <option value="@item.Id">@item.Name</option>
+                        }
+                    }
+                </select>
+            </div>
+        </div>
+
+        <div class="d-flex mt-2">
+            <div>
+                <div class="d-flex">
+                    <div>
+                        <p style="font-size:12px" class="m-0">Min</p>
+                        <input class="form-control" style="width: 10rem" id="input-minprice" type="number" min="0" value="@Model.minPrice" />
+                    </div>
+                    <div>
+                        <p style="font-size:12px" class="m-0">Max </p>
+                        @if (Model.maxPrice != 0)
+                        {
+                            <input class="form-control" style="width: 10rem" id="input-maxprice" type="number" min="0" value="@Model.maxPrice" />
+                        }
+                        else
+                        {
+                            <input class="form-control" style="width: 10rem" id="input-maxprice" type="number" min="0" />
+                        }
+                    </div>
+                </div>
+                <p class="m-0" style="font-size:15px">Qiymət</p>
+            </div>
+
+            <div class="ms-3">
+                <p style="font-size:12px" class="m-0">Valyuta </p>
+                <select class="form-control " style="width: 5rem" id="input-valute"
+                        onmousedown="if(this.options.length>10){this.size=10;}" onchange="this.size=0;" onblur="this.size=0;">
+                    @foreach (var item in ViewBag.Currencies)
+                    {
+                        @if (item.Id == Model.currencyId)
+                        {
+                            <option value="@item.Id" selected>@item.Name</option>
+                        }
+                        else
+                        {
+                            <option value="@item.Id">@item.Name</option>
+                        }
+                    }
+                </select>
+            </div>
+            <div class="ms-3">
+                <p style="font-size:12px" class="m-0">İl </p>
+                <select class="form-control " style="width: 10rem" id="input-year"
+                        onmousedown="if(this.options.length>8){this.size=8;}" onchange="this.size=0;" onblur="this.size=0;">
+                    <option value="0">Seçin</option>
+                    @foreach (var item in ViewBag.Years)
+                    {
+                        @if (item.Id == Model.yearId)
+                        {
+                            <option value="@item.Id" selected>@item.Value</option>
+                        }
+                        else
+                        {
+                            <option value="@item.Id">@item.Value</option>
+                        }
+                    }
+                </select>
+            </div>
+            <div class="ms-3">
+                <p style="font-size:12px" class="m-0">Yanacaq </p>
+                <select class="form-control " style="width: 10rem" id="input-fuel"
+                        onmousedown="if(this.options.length>8){this.size=8;}" onchange="this.size=0;" onblur="this.size=0;">
+                    <option value="0">Seçin</option>
+                    @foreach (var item in ViewBag.Fuels)
+                    {
+                        @if (item.Id == Model.fuelId)
+                        {
+                            <option value="@item.Id" selected>@item.Name</option>
+                        }
+                        else
+                        {
+                            <option value="@item.Id">@item.Name</option>
+                        }
+                    }
+                </select>
+            </div>
+            <div class="ms-3">
+                <p style="font-size:12px" class="m-0">Ötürücü</p>
+                <select class="form-control " style="width: 10rem" id="input-drivetrain"
+                        onmousedown="if(this.options.length>8){this.size=8;}" onchange="this.size=0;" onblur="this.size=0;">
+                    <option value="0">Seçin</option>
+                    @foreach (var item in ViewBag.DriveTrains)
+                    {
+                        @if (item.Id == Model.driveTrainId)
+                        {
+                            <option value="@item.Id" selected>@item.Name</option>
+                        }
+                        else
+                        {
+                            <option value="@item.Id">@item.Name</option>
+                        }
+                    }
+                </select>
+            </div>
+            <div class="ms-3 me-2">
+                <p style="font-size:12px" class="m-0">Sürət qutusu</p>
+                <select class="form-control " style="width: 13rem" id="input-gearbox"
+                        onmousedown="if(this.options.length>8){this.size=8;}" onchange="this.size=0;" onblur="this.size=0;">
+                    <option value="0">Seçin</option>
+                    @foreach (var item in ViewBag.GearBoxes)
+                    {
+                        @if (item.Id == Model.gearboxId)
+                        {
+                            <option value="@item.Id" selected>@item.Name</option>
+                        }
+                        else
+                        {
+                            <option value="@item.Id">@item.Name</option>
+                        }
+                    }
+                </select>
+            </div>
+        </div>
+
+        <div class="d-flex mt-2">
+            <div>
+                <div class="d-flex">
+                    <div>
+                        <p style="font-size:12px" class="m-0">Min</p>
+                        <input class="form-control" style="width: 10rem" id="input-minmilage" type="number" min="0" value="@Model.milageMin" />
+                    </div>
+                    <div>
+                        <p style="font-size:12px" class="m-0">Max </p>
+                        @if (Model.milageMax != 0)
+                        {
+                            <input class="form-control" style="width: 10rem" id="input-maxmilage" type="number" min="0" value="@Model.milageMax" />
+                        }
+                        else
+                        {
+                            <input class="form-control" style="width: 10rem" id="input-maxmilage" type="number" min="0" />
+                        }
+                    </div>
+                </div>
+                <p class="m-0" style="font-size:15px">Yürüş</p>
+            </div>
+            <div class="ms-3">
+                <p style="font-size:12px" class="m-0">Sahiblərin sayı</p>
+                <select class="form-control " style="width: 17rem" id="input-owner"
+                        onmousedown="if(this.options.length>8){this.size=8;}" onchange="this.size=0;" onblur="this.size=0;">
+                    <option value="0">Seçin</option>
+                    @foreach (var item in ViewBag.Owners)
+                    {
+                        @if (item.Id == Model.ownerId)
+                        {
+                            <option value="@item.Id" selected>@item.Name</option>
+                        }
+                        else
+                        {
+                            <option value="@item.Id">@item.Name</option>
+                        }
+                    }
+                </select>
+            </div>
+            <div class="ms-3">
+                <p style="font-size:12px" class="m-0">Oturacaqların sayı</p>
+                <select class="form-control " style="width: 17rem" id="input-seat"
+                        onmousedown="if(this.options.length>8){this.size=8;}" onchange="this.size=0;" onblur="this.size=0;">
+                    <option value="0">Seçin</option>
+                    @foreach (var item in ViewBag.Seats)
+                    {
+                        @if (item.Id == Model.seatId)
+                        {
+                            <option value="@item.Id" selected>@item.Value</option>
+                        }
+                        else
+                        {
+                            <option value="@item.Id">@item.Value</option>
+                        }
+                    }
+                </select>
+            </div>
+            <div class="ms-3">
+                <p style="font-size:12px" class="m-0">Ölkəsi</p>
+                <select class="form-control " style="width: 16rem" id="input-country"
+                        onmousedown="if(this.options.length>8){this.size=8;}" onchange="this.size=0;" onblur="this.size=0;">
+                    <option value="0">Seçin</option>
+                    @foreach (var item in ViewBag.Countries)
+                    {
+                        @if (item.Id == Model.countryId)
+                        {
+                            <option value="@item.Id" selected>@item.Name</option>
+                        }
+                        else
+                        {
+                            <option value="@item.Id">@item.Name</option>
+                        }
+                    }
+                </select>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-end me-4">
+            <button type="submit" class="btn btn-danger">Göstər</button>
+        </div>
+    </form>
+</div>

@@ -8,7 +8,7 @@ public interface IVehicleService
     Task CancelAsync(int id);
     Task AwaitAsync(int id);
     Task RenewExpireDateAsync(int id);
-    Task CreateAsync(VehiclePostDto postDto);
+    Task<string> CreateAsync(VehiclePostDto postDto);
     Task UpdateAsync(VehicleUpdateDto updateDto);
     Task DeleteAsync(int id);
 }

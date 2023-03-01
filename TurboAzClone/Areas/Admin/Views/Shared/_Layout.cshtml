@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@inject ISettingService ss;
+<!DOCTYPE html>
 <html dir="ltr" lang="en">
 
 <head>
@@ -55,11 +56,11 @@
                     <!-- ============================================================== -->
                     <a class="navbar-brand" asp-controller="Dashboard" asp-action="Index">
                         <!-- Logo icon -->
-                        <b class="logo-icon">
+                        <div class="logo-icon">
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                             <!-- Dark Logo icon -->
-                            <img src="~/admin/images/logo-icon.png" alt="homepage" class="dark-logo" />
-                        </b>
+                            <img src="~/assets/images/logos/@ss.Get().Logo" alt="homepage" class="dark-logo" style="width:100px" />
+                        </div>
                         <!--End Logo icon -->
                     </a>
                     <!-- ============================================================== -->
@@ -94,9 +95,15 @@
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle waves-effect waves-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                USER
+                                @User.Identity.Name
                             </a>
                             <ul class="dropdown-menu show" aria-labelledby="navbarDropdown"></ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="settings" asp-action="index">
+                                <i class="fa-solid fa-settings me-3"></i>
+                                S
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -110,7 +117,7 @@
         <!-- ============================================================== -->
         <aside class="left-sidebar" data-sidebarbg="skin6">
             <!-- Sidebar scroll-->
-            <div class="scroll-sidebar">
+            <div class="scroll-sidebar ">
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
@@ -124,12 +131,6 @@
                         </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                               href="pages-profile.html" aria-expanded="false">
-                                <i class="me-3 fa fa-user" aria-hidden="true"></i><span class="hide-menu">Hesab</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                asp-controller="vehicles" asp-action="all" aria-expanded="false">
                                 <i class="fa-solid fa-car-side me-3"></i>
                                 <span class="hide-menu">Bütün Maşınlar</span>
@@ -139,7 +140,7 @@
                             <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                asp-controller="vehicles" asp-action="news" aria-expanded="false">
                                 <i class="fa-solid fa-car-rear me-3"></i>
-                                <span class="hide-menu">Yeni Maşınlar</span>
+                                <span class="hide-menu">Gözləmədə olanlar</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
@@ -149,18 +150,18 @@
                                 <span class="hide-menu">Imtina ol. Maşınlar</span>
                             </a>
                         </li>
-                        <li class="sidebar-item">
+                     @*   <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                asp-controller="vehicles" asp-action="editeds" aria-expanded="false">
                                 <i class="fa-solid fa-car-rear me-3"></i>
                                 <span class="hide-menu">Yenilənmiş Maşınlar</span>
                             </a>
-                        </li>
+                        </li>*@
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                asp-controller="vehicles" asp-action="expireds" aria-expanded="false">
                                 <i class="fa-solid fa-car-rear me-3"></i>
-                                <span class="hide-menu">Müd. başa çat. Maşınlar</span>
+                                <span class="hide-menu">Müddəti bitmişlər</span>
                             </a>
                         </li>
                         <li class="sidebar-item">

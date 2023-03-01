@@ -6,3 +6,4 @@ global using Core.Repositories.Interfaces;
 global using Core.Entities.Concrets;
 global using DAL.Repositories.Interfaces;
 global using Entities.Concrets;
+global using System.Reflection;

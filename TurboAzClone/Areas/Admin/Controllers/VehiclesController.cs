@@ -1,10 +1,7 @@
-﻿using Business.Services.Interfaces;
-using Business.Utilities.Exceptions;
-using Microsoft.AspNetCore.Mvc;
-
-namespace TurboAzClone.Areas.Admin.Controllers
+﻿namespace TurboAzClone.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles ="Support,Admin,SuperAdmin")]
     public class VehiclesController : Controller
     {
         private readonly IVehicleService _service;
@@ -17,7 +14,7 @@ namespace TurboAzClone.Areas.Admin.Controllers
             => View(await _service.GetAllAsync(x => x.isConfirmed && !x.isExpired, true));
 
         public async Task<IActionResult> News()
-            => View(await _service.GetAllAsync(x => x.inAwait && !x.isExpired, true));
+            => View(await _service.GetAllAsync(x => x.inAwait || x.isEdited && !x.isExpired, true));
 
         public async Task<IActionResult> Cancels()
             => View(await _service.GetAllAsync(x => x.isCancelled && !x.isDeleted, true));

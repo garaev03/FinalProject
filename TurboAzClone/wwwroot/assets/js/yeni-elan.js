@@ -1,7 +1,7 @@
 var models = document.getElementById("models")
 
 document.getElementById("selected-make").addEventListener("click", () => {
-    models.innerHTML = "<option>Seçin</option>"
+    models.innerHTML = "<option value='0'>Seçin</option>"
     fetch("/vehicle/getmodels?makeId=" + GetSelectedMake())
         .then(resp => resp.json())
         .then(data => {

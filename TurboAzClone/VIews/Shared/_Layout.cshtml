@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@inject ISettingService ss;
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,14 +9,20 @@
     <title>@ViewData["Title"]</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="~/assets/style.css">
     <link rel="stylesheet" href="~/assets/image-fullscreen.css">
     <link rel="stylesheet" href="~/assets/image-slider.css">
     <link rel="stylesheet" href="~/assets/splide.min.css">
     <link rel="stylesheet" href="~/assets/login.css">
-
     <style>
-
+        #div1 {
+            width: 70px;
+            height: 70px;
+            border: 1px solid #aaaaaa;
+        }
     </style>
 </head>
 
@@ -31,20 +38,9 @@
             <div class="d-flex justify-content-between">
                 <div class="other-websites">
                     <span>Dəstək:</span>
-                    <a>012 537 11 37</a>
+                    <a href="tel: +994 @ss.Get().TelephoneNumber">+994 @ss.Get().TelephoneNumber</a>
                 </div>
                 <div class="others d-flex">
-                    <a class="help me-4">
-                        Yardım
-                    </a>
-                    <a class="lang me-4">
-                        RU
-                    </a>
-                    <a class="favourites me-4">
-                        <i class="fa-solid fa-heart"></i>
-                        Seçilmişlər
-                    </a>
-
                     @if (User.Identity.IsAuthenticated)
                     {
                         <button class="dropdown-toggle border-0 text-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -53,7 +49,6 @@
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                             <li><a class="dropdown-item" asp-controller="account" asp-action="confirmeds">Mənim Elanlarım</a></li>
-                            <li><a class="dropdown-item" asp-controller="account" asp-action="edit">Profil</a></li>
                             <li><a class="dropdown-item" asp-controller="account" asp-action="logout">Çıxış et</a></li>
                         </ul>
                     }
@@ -73,7 +68,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-danger">
                 <a class="navbar-brand me-5" asp-controller="home" asp-action="index">
                     <img width="150"
-                         src="https://turbo.azstatic.com/assets/logo-67bbb214ce91649f92ed6036eba7e52c29f3e56614a8d1404283b4c23c5878d6.svg"
+                         src="~/assets/images/logos/@ss.Get().Logo"
                          alt="turbo.az">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -83,11 +78,8 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Bütün elanlar</a>
+                            <a class="nav-link" asp-controller="home" asp-action="index">Bütün elanlar</a>
                         </li>
-                        @* <li class="nav-item">
-                        <a class="nav-link" href="#">Avtosalonlar</a>
-                        </li>*@
                     </ul>
                 </div>
                 <div class="new-anonc">
@@ -106,25 +98,20 @@
 
         <div class="footer-support pt-3 pb-3">
             <div class="d-flex justify-content-between">
-                <a class="add-advert ms-5 mt-2">
-                    Reklam Yerləşdirin
-                </a>
+                <div href="" class="call-support ms-5 d-flex">
+                    <i class="fa-solid fa-phone m-3 fa-lg"></i>
+                    <div>
+                        <a href="tel: +994 @ss.Get().TelephoneNumber">+994 @ss.Get().TelephoneNumber</a>
+                    </div>
+                </div>
                 <div>
                     <div class="contact d-flex justify-content-between">
-                        <a href="" class="me-4 mt-2"><i class="fa-brands fa-facebook-f fa-lg"></i></a>
-                        <a href="" class="me-4 mt-2"><i class="fa-brands fa-instagram fa-lg"></i></a>
-                        <a href="" class="me-4 mt-2">
+                        <a href="@ss.Get().FacebookLink" class="me-4 mt-2"><i class="fa-brands fa-facebook-f fa-lg"></i></a>
+                        <a href="@ss.Get().InstagramLink" class="me-4 mt-2"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                        <a href="mailto: @ss.Get().Email" class="me-4 mt-2">
                             <i class="fa-solid fa-envelope fa-lg"></i>
-                            mail@mail.ru
+                            @ss.Get().Email
                         </a>
-                        <div href="" class="call-support me-5 d-flex">
-                            <i class="fa-solid fa-phone m-3 fa-lg"></i>
-                            <div>
-                                <a>012 537 1 37</a>
-                                <br>
-                                <a>012 537 1 37</a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -132,16 +119,13 @@
         </div>
         <hr class="m-0">
         <div class="agreements ps-5 pe-5 pt-3 pb-3">
-            <a class="me-4">
+            <a class="me-4" asp-controller="pages" asp-action="rules">
                 Qaydalar
             </a>
-            <a class="me-4">
+            <a class="me-4" asp-controller="pages" asp-action="laws">
                 Qanun
             </a>
-            <a class="me-4">
-                Istifadəçi razılaşması
-            </a>
-            <a class="me-4">
+            <a class="me-4" asp-controller="pages" asp-action="privacy">
                 Məxfilik siyasəti
             </a>
         </div>
@@ -149,35 +133,135 @@
         <div class="footer-end p-5 pt-3 pb-3 bg-danger text-light">
             <div class="d-flex justify-content-between">
                 <div class="desc-part col-6">
-                    Saytın Administrasiyası reklam bannerlərinin və yerləşdirilmiş elanların məzmununa görə məsuliyyət
-                    daşımır.
+                    @ss.Get().FooterLeft
                 </div>
                 <div class="about-part">
                     <span>
-                        2006-2023 Digital Classifieds MMC. VÖEN: 1405631661
+                        @ss.Get().FooterRight
                     </span>
                 </div>
             </div>
         </div>
     </div>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="~/assets/js/yeni-elan.js"></script>
     <script src="~/assets/js/splide.min.js"></script>
     <script src="~/assets/js/image-fullscreen.js"></script>
     <script src="~/assets/js/image-slider.js"></script>
+    <script src="~/assets/js/image-drag.js"></script>
+    <script src="~/assets/js/phone-number-input.js"></script>
+    <script src="~/assets/js/edit-modal.js"></script>
+    <script src="~/assets/js/filter.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.2/dist/sweetalert2.all.min.js"></script>
     <script>
-        document.getElementById("phone").addEventListener("keydown", function (e) {
-            const txt = this.value;
-            // prevent more than 12 characters, ignore the spacebar, allow the backspace
-            if ((txt.length == 12 || e.which == 32) & e.which !== 8) e.preventDefault();
-            // add spaces after 3 & 7 characters, allow the backspace
-            if ((txt.length == 2 || txt.length == 6 || txt.length == 9) && e.which !== 8)
-                this.value = this.value + " ";
-        });
+        const editModals = document.querySelectorAll(".edit")
+        const deleteModals = document.querySelectorAll(".delete")
+
+        editModals.forEach(btn => {
+            btn.addEventListener("click", (e) => {
+                let id = parseInt(btn.getAttribute("data-id"))
+                Swal.fire({
+                    title: 'PIN KODU DAXIL EDIN',
+                    html:
+                        '<input id="swal-input1" class="form-control" maxlength="6">',
+                    focusConfirm: false,
+                    preConfirm: () => {
+                        let value = document.getElementById('swal-input1').value
+                        console.log(value)
+                        fetch("/vehicle/edit/" + id + "?PINCode=" + value)
+                            .then(resp => resp.text()).then(text => {
+                                if (text === "403") {
+                                    Swal.fire({
+                                        icon: 'error',
+                                        text: "Daxil etdiyiniz PİN kod yanlışdır.",
+                                    })
+                                } else {
+                                    let url = '@Url.Action("edit", "vehicle")/' + id + '?PINCode=' + value
+                                    window.open(url)
+                                }
+                            })
+                    }
+                })
+            })
+        })
+
+        deleteModals.forEach(btn => {
+            btn.addEventListener("click", (e) => {
+                let id = parseInt(btn.getAttribute("data-id"))
+                Swal.fire({
+                    title: 'PIN KODU DAXIL EDIN',
+                    html:
+                        '<input id="swal-input1" class="form-control" maxlength="6">',
+                    focusConfirm: false,
+                    preConfirm: () => {
+                        let value = document.getElementById('swal-input1').value
+                        console.log(value)
+                        fetch("/vehicle/delete/" + id + "?PINCode=" + value)
+                            .then(resp => resp.text()).then(text => {
+                                if (text === "403") {
+                                    Swal.fire({
+                                        icon: 'error',
+                                        text: "Daxil etdiyiniz PİN kod yanlışdır.",
+                                    })
+                                } else {
+                                    let timerInterval
+                                    Swal.fire({
+                                        title: 'Elan uğurla silindi!',
+                                        html: 'Pəncərə birazdan saniyəyə bağlanacaq',
+                                        timer: 2000,
+                                        timerProgressBar: true,
+                                        //didOpen: () => {
+                                        //    Swal.showLoading()
+                                        //    const b = Swal.getHtmlContainer().querySelector('b')
+                                        //    timerInterval = setInterval(() => {
+                                        //        b.textContent = Swal.getTimerLeft()
+                                        //    }, 3)
+                                        //},
+                                        willClose: () => {
+                                            clearInterval(timerInterval)
+                                        }
+                                    }).then((result) => {
+                                        /* Read more about handling dismissals below */
+                                        if (result.dismiss === Swal.DismissReason.timer) {
+                                        }
+                                        window.location.href = "/home/index"
+                                    })
+                                }
+                            })
+                    }
+                })
+            })
+        })
+
+        let filter = document.querySelector(".form-filter")
+
+        filter.addEventListener("submit", (e) => {
+            e.preventDefault()
+            let make = document.querySelector("#selected-make").value
+            let model = document.querySelector("#models").value
+            let ban = document.getElementById("input-ban").value
+            let city = document.getElementById("input-city").value
+            let priceMin = document.getElementById("input-minprice").value
+            let priceMax = document.getElementById("input-maxprice").value
+            let valute = document.getElementById("input-valute").value
+            let fuel = document.getElementById("input-fuel").value
+            let year = document.getElementById("input-year").value
+            let drivetrain = document.getElementById("input-drivetrain").value
+            let gearbox = document.getElementById("input-gearbox").value
+            let milageMin = document.getElementById("input-minmilage").value
+            let milageMax = document.getElementById("input-maxmilage").value
+            let owner = document.getElementById("input-owner").value
+            let seat = document.getElementById("input-seat").value
+            let country = document.getElementById("input-country").value
+            if (priceMin === "") { priceMin = 0 }
+            if (priceMax === "") { priceMax = 0 }
+            if (milageMin === "") { milageMin = 0 }
+            if (milageMax === "") { milageMax = 0 }
+            let url = '@Url.Action("autos", "vehicle")?makeId=' + make + "&modelId=" + model + "&banId=" + ban + "&cityId=" + city + "&minPrice=" + priceMin + "&maxPrice=" + priceMax + "&currencyId=" + valute + "&fuelId=" + fuel + "&yearId=" + year + "&driveTrainId=" + drivetrain + "&gearboxId=" + gearbox + "&milageMin=" + milageMin + "&milageMax=" + milageMax + "&ownerId=" + owner + "&seatId=" + seat + "&countryId=" + country
+            window.open(url, "_self")
+        })
     </script>
 
 </body>
